@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dasfc-pointcloud-measurement"
+version = "1.0.0"
+description = "Scan-pair conformal coverage intervals for structural point-cloud displacement fields"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [
+  {name = "Yuan Liao", email = "liaoyuan@nchu.edu.cn"},
+  {name = "Hui Liu"},
+  {name = "Jiliang Tu"},
+  {name = "Jing Jiang"},
+  {name = "Zaihong Wan"},
+  {name = "Jianbo Gao"},
+  {name = "Ting Fang"},
+  {name = "Zhiwei Hu"},
+]
+dependencies = [
+  "h5py==3.16.0",
+  "matplotlib==3.10.9",
+  "numpy==2.4.6",
+  "open3d==0.19.0",
+  "pandas==3.0.3",
+  "plyfile==1.1.3",
+  "pyyaml==6.0.3",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+]
+
+[project.urls]
+Repository = "https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement"
+
+[tool.setuptools]
+packages = ["research", "research.measurement_q2", "research.measurement_q2.pcudm"]

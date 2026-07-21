@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "status": "SHREC2019_REPRODUCIBLE",
+  "captured_at_utc": "2026-07-21T02:18:28.636611+00:00",
+  "method": "Exact canonical JSON match after removing timestamps, runtime durations, and resolved root paths; no scientific metric tolerance applied.",
+  "comparisons": {
+    "execution_report.json": {
+      "original_canonical_sha256": "86737dee6e23c90e67488b05512f270493474e93998a9b0ba488f85b755c3376",
+      "reproduction_canonical_sha256": "86737dee6e23c90e67488b05512f270493474e93998a9b0ba488f85b755c3376",
+      "exact_scientific_match": true
+    },
+    "analysis.json": {
+      "original_canonical_sha256": "985c6008644db9983a361fc35aedc45616dd2485aac7e11acb9640ec03174385",
+      "reproduction_canonical_sha256": "985c6008644db9983a361fc35aedc45616dd2485aac7e11acb9640ec03174385",
+      "exact_scientific_match": true
+    }
+  }
+}

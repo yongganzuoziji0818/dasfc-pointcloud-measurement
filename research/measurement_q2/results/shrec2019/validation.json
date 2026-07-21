@@ -1,0 +1,721 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "SHREC2019-RESOLUTION-ROBUSTNESS-V1.1",
+  "captured_at_utc": "2026-07-21T02:24:35.550390+00:00",
+  "status": "SHREC2019_RESULTS_VALIDATED",
+  "structural_checks": {
+    "formal_sentinel_present": true,
+    "reproduction_sentinel_present": true,
+    "pair_count_is_76": true,
+    "attempted_rows_is_1216": true,
+    "completed_rows_is_1216": true,
+    "failed_rows_is_zero": true,
+    "no_structural_errors": true,
+    "no_incomplete_pair_frontend_rows": true,
+    "exact_reproduction_pass": true,
+    "protocol_matches": true
+  },
+  "reproduction": {
+    "status": "SHREC2019_REPRODUCIBLE",
+    "canonical_execution_sha256": null,
+    "canonical_analysis_sha256": null
+  },
+  "frontend_summaries": {
+    "published_coordinates": {
+      "complete_pairs": 76,
+      "metrics": {
+        "resolution_fit_gap": {
+          "n": 76,
+          "median": 0.001574293610170245,
+          "q25": 0.0010916462497509178,
+          "q75": 0.0019976008773700572,
+          "maximum": 0.005431634328188939
+        },
+        "translation_gap": {
+          "n": 76,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "maximum": 0.0
+        },
+        "rotation_gap_degrees": {
+          "n": 76,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "maximum": 0.0
+        },
+        "cycle_translation": {
+          "n": 76,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "maximum": 0.0
+        },
+        "cycle_rotation_degrees": {
+          "n": 76,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "maximum": 0.0
+        },
+        "mean_symmetric_fit": {
+          "n": 76,
+          "median": 0.07476741634721801,
+          "q25": 0.05812475742620722,
+          "q75": 0.09625631352627706,
+          "maximum": 0.15466720687405175
+        }
+      },
+      "by_test_set_resolution_fit_gap": {
+        "0": {
+          "n": 14,
+          "median": 0.00038132081987894,
+          "q25": 0.00022271295280415493,
+          "q75": 0.000639360821139013,
+          "maximum": 0.0031954663568171116
+        },
+        "1": {
+          "n": 26,
+          "median": 0.001638821700846546,
+          "q25": 0.0013278176950981338,
+          "q75": 0.0024094739394175634,
+          "maximum": 0.004813855195992922
+        },
+        "2": {
+          "n": 19,
+          "median": 0.0016170476278462298,
+          "q25": 0.0014681307400359264,
+          "q75": 0.0017664688147536745,
+          "maximum": 0.002949511204247607
+        },
+        "3": {
+          "n": 17,
+          "median": 0.0015836397684761347,
+          "q25": 0.0010148914509538615,
+          "q75": 0.002223254753292145,
+          "maximum": 0.005431634328188939
+        }
+      },
+      "diagnostic_associations": {
+        "match_p95_vs_resolution_fit_gap": {
+          "n": 76,
+          "rho": 0.4527682843472317,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        },
+        "match_p95_vs_translation_gap": {
+          "n": 76,
+          "rho": null,
+          "p_value_not_reported": true
+        }
+      },
+      "leave_one_scan_out": {
+        "resolution_fit_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.001497848755464451,
+          "median_max": 0.0016077124647068536,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "translation_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.0,
+          "median_max": 0.0,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "mean_symmetric_fit": {
+          "removed_scan_ids": 44,
+          "median_min": 0.07131439493824383,
+          "median_max": 0.07965232530908625,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        }
+      }
+    },
+    "cascade_strong": {
+      "complete_pairs": 76,
+      "metrics": {
+        "resolution_fit_gap": {
+          "n": 76,
+          "median": 0.0014187511346867333,
+          "q25": 0.0009089027294954619,
+          "q75": 0.0020009142976430746,
+          "maximum": 0.007549930583114298
+        },
+        "translation_gap": {
+          "n": 76,
+          "median": 0.004192984187315475,
+          "q25": 0.0027970615504605344,
+          "q75": 0.007159484037565051,
+          "maximum": 0.1021391286005704
+        },
+        "rotation_gap_degrees": {
+          "n": 76,
+          "median": 0.633317658310339,
+          "q25": 0.35915361008761854,
+          "q75": 0.9754496338589689,
+          "maximum": 3.0842411752923913
+        },
+        "cycle_translation": {
+          "n": 76,
+          "median": 0.02052639178298131,
+          "q25": 0.008951098583151785,
+          "q75": 0.03786396279701487,
+          "maximum": 0.15049030661115884
+        },
+        "cycle_rotation_degrees": {
+          "n": 76,
+          "median": 3.494844738260277,
+          "q25": 1.7026772160752177,
+          "q75": 8.715342799934644,
+          "maximum": 49.6883370405109
+        },
+        "mean_symmetric_fit": {
+          "n": 76,
+          "median": 0.03987176852390682,
+          "q25": 0.03093185446535261,
+          "q75": 0.05349337925039595,
+          "maximum": 0.10126248337315892
+        }
+      },
+      "by_test_set_resolution_fit_gap": {
+        "0": {
+          "n": 14,
+          "median": 0.0008264628444361998,
+          "q25": 0.0005173072880657187,
+          "q75": 0.0010465416711762298,
+          "maximum": 0.007310916424102644
+        },
+        "1": {
+          "n": 26,
+          "median": 0.0017565940008515421,
+          "q25": 0.0013325178011442062,
+          "q75": 0.0022667501639507233,
+          "maximum": 0.004808424080862177
+        },
+        "2": {
+          "n": 19,
+          "median": 0.0014169008193468287,
+          "q25": 0.001090314613367462,
+          "q75": 0.001939549610694962,
+          "maximum": 0.002417524669397292
+        },
+        "3": {
+          "n": 17,
+          "median": 0.0015866440276013256,
+          "q25": 0.0011546140886565864,
+          "q75": 0.0018175872325491907,
+          "maximum": 0.007549930583114298
+        }
+      },
+      "diagnostic_associations": {
+        "match_p95_vs_resolution_fit_gap": {
+          "n": 76,
+          "rho": 0.3570471633629528,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        },
+        "match_p95_vs_translation_gap": {
+          "n": 76,
+          "rho": 0.167053998632946,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        }
+      },
+      "leave_one_scan_out": {
+        "resolution_fit_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.001402403332653103,
+          "median_max": 0.0015732667722624643,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "translation_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.003799583402470195,
+          "median_max": 0.004858940163636771,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "mean_symmetric_fit": {
+          "removed_scan_ids": 44,
+          "median_min": 0.03786337032629848,
+          "median_max": 0.041384263046874134,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        }
+      }
+    },
+    "multiscale_trimmed_ptp": {
+      "complete_pairs": 76,
+      "metrics": {
+        "resolution_fit_gap": {
+          "n": 76,
+          "median": 0.0017287517435254007,
+          "q25": 0.0011095129219837302,
+          "q75": 0.0021994415900723095,
+          "maximum": 0.004218903267551276
+        },
+        "translation_gap": {
+          "n": 76,
+          "median": 0.003009547733864205,
+          "q25": 0.001579895050266879,
+          "q75": 0.006067400380859491,
+          "maximum": 0.04161183961900878
+        },
+        "rotation_gap_degrees": {
+          "n": 76,
+          "median": 0.5909473077569672,
+          "q25": 0.24182402252732055,
+          "q75": 1.22118227500553,
+          "maximum": 14.53053776570685
+        },
+        "cycle_translation": {
+          "n": 76,
+          "median": 0.021279645669473397,
+          "q25": 0.005742341471159566,
+          "q75": 0.05658186494831319,
+          "maximum": 0.2133601300460876
+        },
+        "cycle_rotation_degrees": {
+          "n": 76,
+          "median": 2.766718726343106,
+          "q25": 0.9526562604672162,
+          "q75": 7.363368461566281,
+          "maximum": 63.83348445470486
+        },
+        "mean_symmetric_fit": {
+          "n": 76,
+          "median": 0.03888483287655564,
+          "q25": 0.02719716777367839,
+          "q75": 0.051976765287930035,
+          "maximum": 0.0977698879512956
+        }
+      },
+      "by_test_set_resolution_fit_gap": {
+        "0": {
+          "n": 14,
+          "median": 0.0008047301610348478,
+          "q25": 0.0004081047822658756,
+          "q75": 0.0011924592875055353,
+          "maximum": 0.0022722606289762234
+        },
+        "1": {
+          "n": 26,
+          "median": 0.002044621068465688,
+          "q25": 0.0012316831587843428,
+          "q75": 0.002535586653358961,
+          "maximum": 0.004218903267551276
+        },
+        "2": {
+          "n": 19,
+          "median": 0.0016099950423019913,
+          "q25": 0.001244308450943029,
+          "q75": 0.0018977058378078157,
+          "maximum": 0.002306412335028686
+        },
+        "3": {
+          "n": 17,
+          "median": 0.0018735997625032273,
+          "q25": 0.001202836311402139,
+          "q75": 0.0022548943090243585,
+          "maximum": 0.003148109518019325
+        }
+      },
+      "diagnostic_associations": {
+        "match_p95_vs_resolution_fit_gap": {
+          "n": 76,
+          "rho": 0.3423923444976077,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        },
+        "match_p95_vs_translation_gap": {
+          "n": 76,
+          "rho": 0.3334791524265208,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        }
+      },
+      "leave_one_scan_out": {
+        "resolution_fit_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.0013841549252276188,
+          "median_max": 0.0017520509687280056,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "translation_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.002736231321665661,
+          "median_max": 0.0034177432479399594,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "mean_symmetric_fit": {
+          "removed_scan_ids": 44,
+          "median_min": 0.03657310113534483,
+          "median_max": 0.03953821269259355,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        }
+      }
+    },
+    "robust_ptpl": {
+      "complete_pairs": 76,
+      "metrics": {
+        "resolution_fit_gap": {
+          "n": 76,
+          "median": 0.0019497973153718645,
+          "q25": 0.0013710362383187386,
+          "q75": 0.0031827558784644217,
+          "maximum": 0.016841444308118556
+        },
+        "translation_gap": {
+          "n": 76,
+          "median": 0.004874778532413877,
+          "q25": 0.0013095429073766286,
+          "q75": 0.04011981333019514,
+          "maximum": 0.19764015961495243
+        },
+        "rotation_gap_degrees": {
+          "n": 76,
+          "median": 1.6700325968977991,
+          "q25": 0.26182502008208264,
+          "q75": 6.306393697760557,
+          "maximum": 43.7985658913042
+        },
+        "cycle_translation": {
+          "n": 76,
+          "median": 0.013288258805224051,
+          "q25": 0.004958336505415273,
+          "q75": 0.11567719672057691,
+          "maximum": 0.6023893719528379
+        },
+        "cycle_rotation_degrees": {
+          "n": 76,
+          "median": 4.02527201705188,
+          "q25": 1.0520161891222948,
+          "q75": 12.853859902224656,
+          "maximum": 81.8076132569552
+        },
+        "mean_symmetric_fit": {
+          "n": 76,
+          "median": 0.03893825181190212,
+          "q25": 0.027205864420806053,
+          "q75": 0.056056840670024054,
+          "maximum": 0.09892591292831429
+        }
+      },
+      "by_test_set_resolution_fit_gap": {
+        "0": {
+          "n": 14,
+          "median": 0.0011070337214548458,
+          "q25": 0.0005062481982844756,
+          "q75": 0.0017607982089920989,
+          "maximum": 0.0047930551885923545
+        },
+        "1": {
+          "n": 26,
+          "median": 0.002491717900825097,
+          "q25": 0.001757304917809795,
+          "q75": 0.00465431125411264,
+          "maximum": 0.014534961975096204
+        },
+        "2": {
+          "n": 19,
+          "median": 0.0017284056645107057,
+          "q25": 0.001362643590553464,
+          "q75": 0.002166516793188746,
+          "maximum": 0.008075280267295114
+        },
+        "3": {
+          "n": 17,
+          "median": 0.0019380368364563406,
+          "q25": 0.001590929043593741,
+          "q75": 0.002909359692616957,
+          "maximum": 0.016841444308118556
+        }
+      },
+      "diagnostic_associations": {
+        "match_p95_vs_resolution_fit_gap": {
+          "n": 76,
+          "rho": 0.4985919343814081,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        },
+        "match_p95_vs_translation_gap": {
+          "n": 76,
+          "rho": 0.45670539986329467,
+          "p_value_not_reported": true,
+          "note": "Finite-benchmark descriptive association; no independent-unit inference."
+        }
+      },
+      "leave_one_scan_out": {
+        "resolution_fit_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.0018961223325051554,
+          "median_max": 0.0020655640410561626,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "translation_gap": {
+          "removed_scan_ids": 44,
+          "median_min": 0.003305233856956092,
+          "median_max": 0.00734108770918529,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        },
+        "mean_symmetric_fit": {
+          "removed_scan_ids": 44,
+          "median_min": 0.037232740596947624,
+          "median_max": 0.040462877652661496,
+          "interpretation": "Sensitivity range, not a confidence interval."
+        }
+      }
+    }
+  },
+  "cascade_comparisons": {
+    "multiscale_trimmed_ptp": {
+      "resolution_fit_gap": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -7.912524249602e-05,
+          "q25": -0.0003519959440527855,
+          "q75": 0.00011759321104931608,
+          "maximum": 0.007032880663791175
+        },
+        "cascade_lower_count": 46,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "translation_gap": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": 0.0012236174399057002,
+          "q25": -0.0012300381565905649,
+          "q75": 0.002752761472578235,
+          "maximum": 0.09912582957976392
+        },
+        "cascade_lower_count": 27,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "rotation_gap_degrees": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": 0.06074864178644669,
+          "q25": -0.5371941695962967,
+          "q75": 0.3441962109307136,
+          "maximum": 2.9961211263112726
+        },
+        "cascade_lower_count": 34,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "cycle_translation": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.0014728788914903186,
+          "q25": -0.03200486298798503,
+          "q75": 0.007958786029996561,
+          "maximum": 0.0626156880568895
+        },
+        "cascade_lower_count": 42,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "cycle_rotation_degrees": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": 0.09143384866388304,
+          "q25": -1.2636617969243444,
+          "q75": 2.6020218980833745,
+          "maximum": 27.96397310642421
+        },
+        "cascade_lower_count": 35,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "mean_symmetric_fit": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": 0.0009500438567694412,
+          "q25": 3.587669526555065e-05,
+          "q75": 0.002949868859435675,
+          "maximum": 0.020602989178051798
+        },
+        "cascade_lower_count": 18,
+        "ties": 0,
+        "pair_count": 76
+      }
+    },
+    "robust_ptpl": {
+      "resolution_fit_gap": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.00030450129854162414,
+          "q25": -0.0016164860459941324,
+          "q75": -3.097762304475225e-05,
+          "maximum": 0.007039706385772032
+        },
+        "cascade_lower_count": 59,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "translation_gap": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.0013663214879209467,
+          "q25": -0.03429750553280169,
+          "q75": 0.0021981144126017355,
+          "maximum": 0.09964160070749466
+        },
+        "cascade_lower_count": 42,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "rotation_gap_degrees": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.9877545653280535,
+          "q25": -5.678611061290727,
+          "q75": 0.106405116642698,
+          "maximum": 2.8474494577471825
+        },
+        "cascade_lower_count": 47,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "cycle_translation": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.0013278527954890124,
+          "q25": -0.07237444236362951,
+          "q75": 0.006927762744867639,
+          "maximum": 0.046032264690937075
+        },
+        "cascade_lower_count": 41,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "cycle_rotation_degrees": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": -0.37877397982009714,
+          "q25": -5.031507880527965,
+          "q75": 1.9859631077169901,
+          "maximum": 28.244545600685363
+        },
+        "cascade_lower_count": 43,
+        "ties": 0,
+        "pair_count": 76
+      },
+      "mean_symmetric_fit": {
+        "cascade_minus_comparator": {
+          "n": 76,
+          "median": 0.0003908166827633619,
+          "q25": -0.0015005997493073488,
+          "q75": 0.0024074592586912393,
+          "maximum": 0.020018485537358032
+        },
+        "cascade_lower_count": 28,
+        "ties": 0,
+        "pair_count": 76
+      }
+    }
+  },
+  "fallacy_scan": [
+    {
+      "id": 1,
+      "name": "Simpson's paradox",
+      "status": "CAUTION",
+      "evidence": {
+        "multiscale_trimmed_ptp": {
+          "overall_median_cascade_minus_comparator": -7.912524249602e-05,
+          "test_set_medians": {
+            "0": 0.00011029518519849006,
+            "1": -2.9272921380548572e-05,
+            "2": -5.6553384301379767e-05,
+            "3": -0.00027949061896506006
+          },
+          "at_least_one_stratum_opposes_overall": true
+        },
+        "robust_ptpl": {
+          "overall_median_cascade_minus_comparator": -0.00030450129854162414,
+          "test_set_medians": {
+            "0": -0.00020104979486516416,
+            "1": -0.0007049739076753821,
+            "2": -0.00013311775145891103,
+            "3": -0.00048736752167236747
+          },
+          "at_least_one_stratum_opposes_overall": false
+        }
+      },
+      "action": "Report exact test-set summaries beside the aggregate result."
+    },
+    {
+      "id": 2,
+      "name": "Ecological fallacy",
+      "status": "CHECKED_BOUNDARY_ENFORCED",
+      "evidence": "Pair rows are not described as independent specimens or individuals."
+    },
+    {
+      "id": 3,
+      "name": "Berkson's paradox",
+      "status": "CAUTION",
+      "evidence": "SHREC'19 is a curated benchmark with a published pair graph, not a random deployment sample.",
+      "action": "Do not generalize prevalence or population performance."
+    },
+    {
+      "id": 4,
+      "name": "Collider bias",
+      "status": "NOT_APPLICABLE",
+      "evidence": "No adjusted causal model or conditioned covariate is used."
+    },
+    {
+      "id": 5,
+      "name": "Base-rate neglect",
+      "status": "NOT_APPLICABLE",
+      "evidence": "No diagnostic classifier, sensitivity, specificity, PPV, or NPV is reported."
+    },
+    {
+      "id": 6,
+      "name": "Regression to the mean",
+      "status": "NOT_APPLICABLE",
+      "evidence": "No extreme-score recruitment or intervention pre/post claim is made."
+    },
+    {
+      "id": 7,
+      "name": "Survivorship bias",
+      "status": "CHECKED_NO_ATTRITION",
+      "evidence": "All 1,216 frozen rows completed; failures would have remained outcomes."
+    },
+    {
+      "id": 8,
+      "name": "Look-elsewhere effect",
+      "status": "CHECKED_DESCRIPTIVE_ONLY",
+      "evidence": "All frozen endpoints are retained and no p-values are computed."
+    },
+    {
+      "id": 9,
+      "name": "Garden of forking paths",
+      "status": "NOTE",
+      "evidence": "v1.1 changed only thread-control determinism after a preserved v1 exact-reproduction failure; algorithms, pairs, and endpoints were unchanged."
+    },
+    {
+      "id": 10,
+      "name": "Correlation is not causation",
+      "status": "CHECKED_BOUNDARY_ENFORCED",
+      "evidence": "Spearman coefficients are labelled finite-benchmark diagnostic associations only."
+    },
+    {
+      "id": 11,
+      "name": "Reverse causality",
+      "status": "NOT_APPLICABLE",
+      "evidence": "No directional causal or temporal claim is made."
+    }
+  ],
+  "fallacy_categories_checked": 11,
+  "confidence": "CAUTION",
+  "allowed_claim": "Finite-benchmark descriptive evidence about cross-resolution registration robustness and failure diagnostics on unlabelled real meshes.",
+  "prohibited_claims": [
+    "real correspondence accuracy",
+    "real displacement accuracy",
+    "real conformal or simultaneous coverage",
+    "76 independent physical specimens",
+    "absolute millimetre accuracy",
+    "railway sound-barrier field validation"
+  ],
+  "statistical_inference": "No p-values or population confidence intervals; medians, IQRs, counts, exact strata, and leave-one-scan-ID-out sensitivity only."
+}

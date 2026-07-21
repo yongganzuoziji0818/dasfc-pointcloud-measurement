@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "status": "FULL_REAL_DATA_AUDIT_ANALYZED",
+  "independent_unit": "physical printed specimen cluster",
+  "specimen_clusters": 38,
+  "device_acquisitions": 114,
+  "raw_processed_independence_warning": "Raw and Processed are representations of the same acquisition and are not independent",
+  "registration": "none; published processed coordinates",
+  "scanner_summaries": {
+    "2iPad_Scaniverse": {
+      "n_specimen_clusters": 38,
+      "mean_symmetric_distance_mm": 9.621546456728211,
+      "sd_symmetric_distance_mm": 8.108398399248715,
+      "median_symmetric_distance_mm": 7.4912302819261924,
+      "iqr_symmetric_distance_mm": [
+        6.35874105073716,
+        9.070939808727944
+      ],
+      "range_symmetric_distance_mm": [
+        4.884791483268874,
+        54.21261421731955
+      ],
+      "cluster_bootstrap_mean_95_ci_mm": [
+        7.646762652143384,
+        12.63933676127178
+      ]
+    },
+    "3FARO_Focus": {
+      "n_specimen_clusters": 38,
+      "mean_symmetric_distance_mm": 7.491490817390223,
+      "sd_symmetric_distance_mm": 8.180361435079494,
+      "median_symmetric_distance_mm": 5.282074157535286,
+      "iqr_symmetric_distance_mm": [
+        4.358893534661769,
+        7.356391335238364
+      ],
+      "range_symmetric_distance_mm": [
+        3.5918440878129276,
+        52.598844735550486
+      ],
+      "cluster_bootstrap_mean_95_ci_mm": [
+        5.564837630789322,
+        10.484684176903592
+      ]
+    },
+    "4Creaform_HandySCAN3D": {
+      "n_specimen_clusters": 38,
+      "mean_symmetric_distance_mm": 5.55125892823524,
+      "sd_symmetric_distance_mm": 8.636217200313876,
+      "median_symmetric_distance_mm": 3.1944882622307844,
+      "iqr_symmetric_distance_mm": [
+        2.3932793809739223,
+        5.12820701328146
+      ],
+      "range_symmetric_distance_mm": [
+        1.4641659636477176,
+        53.51611033040334
+      ],
+      "cluster_bootstrap_mean_95_ci_mm": [
+        3.5196256817625655,
+        8.612754817469074
+      ]
+    }
+  },
+  "paired_scanner_contrasts": [
+    {
+      "first": "4Creaform_HandySCAN3D",
+      "second": "3FARO_Focus",
+      "difference_definition": "first minus second; negative means lower mesh/scan disagreement for first",
+      "n_specimen_clusters": 38,
+      "mean_difference_mm": -1.9402318891549835,
+      "cluster_bootstrap_mean_95_ci_mm": [
+        -2.2947045182749273,
+        -1.5503548376982192
+      ],
+      "paired_t": {
+        "t": -10.016350589808239,
+        "df": 37,
+        "p_two_sided": 4.388194101669584e-12,
+        "p_holm_three_contrasts": 8.776388203339168e-12
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 19.0,
+        "p_two_sided": 2.2337189875543118e-09
+      }
+    },
+    {
+      "first": "4Creaform_HandySCAN3D",
+      "second": "2iPad_Scaniverse",
+      "difference_definition": "first minus second; negative means lower mesh/scan disagreement for first",
+      "n_specimen_clusters": 38,
+      "mean_difference_mm": -4.0702875284929725,
+      "cluster_bootstrap_mean_95_ci_mm": [
+        -4.598565046319193,
+        -3.518929502453882
+      ],
+      "paired_t": {
+        "t": -14.581815019619706,
+        "df": 37,
+        "p_two_sided": 6.450400405593365e-17,
+        "p_holm_three_contrasts": 1.9351201216780096e-16
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 2.0,
+        "p_two_sided": 2.1827872842550278e-11
+      }
+    },
+    {
+      "first": "3FARO_Focus",
+      "second": "2iPad_Scaniverse",
+      "difference_definition": "first minus second; negative means lower mesh/scan disagreement for first",
+      "n_specimen_clusters": 38,
+      "mean_difference_mm": -2.1300556393379884,
+      "cluster_bootstrap_mean_95_ci_mm": [
+        -2.6453972524875113,
+        -1.6415729137935653
+      ],
+      "paired_t": {
+        "t": -8.18178539395061,
+        "df": 37,
+        "p_two_sided": 8.046691438613597e-10,
+        "p_holm_three_contrasts": 8.046691438613597e-10
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 6.0,
+        "p_two_sided": 1.0186340659856796e-10
+      }
+    }
+  ],
+  "friedman_repeated_measures": {
+    "chi_square": 63.0,
+    "df": 2,
+    "p": 2.087967911645931e-14,
+    "kendall_w": 0.8289473684210527
+  },
+  "strict_creaform_better_than_faro_better_than_ipad": {
+    "specimens": 33,
+    "total": 38,
+    "fraction": 0.868421052631579
+  },
+  "evidence_boundary": {
+    "supports": [
+      "real three-device surface disagreement and domain shift",
+      "specimen-clustered repeatability comparisons",
+      "external motivation for domain-aware uncertainty and abstention"
+    ],
+    "does_not_support": [
+      "double-epoch displacement ground truth",
+      "DAS-FC displacement accuracy on railway sound barriers",
+      "independence of the three device scans from the same specimen"
+    ],
+    "algorithm_performance_result": false
+  },
+  "analysis_parameters": {
+    "seed": 20260719,
+    "cluster_bootstrap_repetitions": 10000,
+    "multiple_comparison_correction": "Holm across three scanner contrasts"
+  }
+}

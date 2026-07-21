@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "status": "DEFORMATION_FAMILY_OOD_ANALYZED",
+  "independent_unit": "complete synthetic scan pair",
+  "scope": "post-formal empirical stress test without a coverage guarantee",
+  "deformation_family": "rbf_kink",
+  "n_scan_pairs": 240,
+  "methods": {
+    "das_grouped": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 233,
+      "simultaneous_coverage": 0.9708333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9410304560608658,
+        0.9858012693274998
+      ],
+      "mean_point_coverage": 0.9998898237179487,
+      "mean_interval_width_mm": 24.052376705314312,
+      "mean_interval_score_mm": 24.0565368151983,
+      "failure_count": 0
+    },
+    "das_no_fallback": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 165,
+      "simultaneous_coverage": 0.6875,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.6262936162349089,
+        0.7427986637870065
+      ],
+      "mean_point_coverage": 0.9981119309547501,
+      "mean_interval_width_mm": 15.030709540970573,
+      "mean_interval_score_mm": 15.129290225244837,
+      "failure_count": 0
+    },
+    "das_pointwise": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 13,
+      "simultaneous_coverage": 0.05416666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.031925187796296654,
+        0.09045539081825996
+      ],
+      "mean_point_coverage": 0.9825113804228763,
+      "mean_interval_width_mm": 10.746131337953992,
+      "mean_interval_score_mm": 11.657821729055781,
+      "failure_count": 0
+    },
+    "das_pooled": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 171,
+      "simultaneous_coverage": 0.7125,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.6522462362116623,
+        0.7660583478131753
+      ],
+      "mean_point_coverage": 0.9983823998059952,
+      "mean_interval_width_mm": 17.35117257553383,
+      "mean_interval_score_mm": 17.432880584569485,
+      "failure_count": 0
+    },
+    "homoscedastic_grouped": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 233,
+      "simultaneous_coverage": 0.9708333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9410304560608658,
+        0.9858012693274998
+      ],
+      "mean_point_coverage": 0.9998898237179487,
+      "mean_interval_width_mm": 24.052376705314312,
+      "mean_interval_score_mm": 24.0565368151983,
+      "failure_count": 0
+    },
+    "learned_grouped": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 165,
+      "simultaneous_coverage": 0.6875,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.6262936162349089,
+        0.7427986637870065
+      ],
+      "mean_point_coverage": 0.9981119309547501,
+      "mean_interval_width_mm": 15.030709540970573,
+      "mean_interval_score_mm": 15.129290225244837,
+      "failure_count": 0
+    },
+    "raw_local_grouped": {
+      "n_scan_pairs": 240,
+      "normal_mae_mm": 1.5897818252324163,
+      "simultaneous_successes": 239,
+      "simultaneous_coverage": 0.9958333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9767799274163702,
+        0.9992641019749173
+      ],
+      "mean_point_coverage": 0.9999949919871796,
+      "mean_interval_width_mm": 48.237145848471535,
+      "mean_interval_score_mm": 48.23734199049098,
+      "failure_count": 0
+    }
+  },
+  "fallback_minus_no_fallback": {
+    "simultaneous_coverage_difference": 0.2833333333333333,
+    "simultaneous_coverage_difference_bootstrap_95_ci": [
+      0.225,
+      0.3416666666666667
+    ],
+    "mean_width_difference_mm": 9.021667164343741,
+    "mean_width_difference_bootstrap_95_ci_mm": [
+      8.645562098466398,
+      9.47041829766067
+    ],
+    "mean_interval_score_difference_mm": 8.927246589953462,
+    "mean_interval_score_difference_bootstrap_95_ci_mm": [
+      8.563824568868238,
+      9.365927690171533
+    ],
+    "interpretation": "Fallback raises empirical simultaneous coverage but also widens intervals and worsens interval score; neither policy dominates on coverage and efficiency."
+  },
+  "selective_risk": {
+    "aurc": {
+      "score_scale": 1.4946118540313857,
+      "score_residual": 1.482198098971589,
+      "score_ood": 1.679048933161635,
+      "score_combined": 1.6264900145587293
+    },
+    "lower_is_better": true,
+    "scale_vs_comparators": {
+      "score_residual": {
+        "observed_scale_minus_comparator": 0.012413755059796694,
+        "paired_bootstrap_95_ci": [
+          -0.008969078840222527,
+          0.03265530999373265
+        ]
+      },
+      "score_ood": {
+        "observed_scale_minus_comparator": -0.1844370791302492,
+        "paired_bootstrap_95_ci": [
+          -0.22903760755013744,
+          -0.14048801631179983
+        ]
+      },
+      "score_combined": {
+        "observed_scale_minus_comparator": -0.13187816052734358,
+        "paired_bootstrap_95_ci": [
+          -0.16731158838791568,
+          -0.09704554431393056
+        ]
+      }
+    },
+    "interpretation": "The rejector was frozen before this deformation-family stress test; results are an external robustness audit rather than a new selection step."
+  },
+  "robustness_verdict": "MIXED_EMPIRICAL_ROBUSTNESS",
+  "claim_boundary": "Observed robustness is limited to the tested modal_bulge and rbf_kink generators; do not claim arbitrary deformation-family or field coverage guarantees.",
+  "analysis_parameters": {
+    "seed": 20260722,
+    "paired_bootstrap_repetitions": 10000
+  }
+}

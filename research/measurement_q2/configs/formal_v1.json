@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "das-fc-formal-v1",
+  "alpha": 0.05,
+  "grid": {
+    "points_x": 18,
+    "points_z": 14
+  },
+  "counts_per_known_domain": {
+    "tuning": 60,
+    "validation": 40,
+    "calibration": 150,
+    "test": 60
+  },
+  "counts_per_unseen_domain": {
+    "test": 60
+  },
+  "seed_bases": {
+    "tuning": 100000,
+    "validation": 200000,
+    "calibration": 300000,
+    "test_known": 400000,
+    "test_unseen": 500000
+  },
+  "scale_model": {
+    "target_quantile": 0.8,
+    "max_locations_per_pair": 256,
+    "random_state": 20260719
+  },
+  "blend_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "known_domains": {
+    "nominal": {
+      "sensor": {
+        "noise_mm": 0.55,
+        "heteroscedasticity": 0.8,
+        "dropout": 0.05,
+        "outlier_fraction": 0.01,
+        "occlusion_fraction": 0.05,
+        "pose_translation_mm": 7.0,
+        "pose_rotation_deg": 0.8,
+        "density_jitter": 0.05,
+        "coordinate_jitter_fraction": 0.12,
+        "support_candidate_contamination": 0.15,
+        "support_candidate_miss": 0.08
+      },
+      "geometry": {}
+    },
+    "noise_density": {
+      "sensor": {
+        "noise_mm": 1.35,
+        "heteroscedasticity": 2.0,
+        "dropout": 0.22,
+        "outlier_fraction": 0.025,
+        "occlusion_fraction": 0.08,
+        "pose_translation_mm": 9.0,
+        "pose_rotation_deg": 1.0,
+        "density_jitter": 0.25,
+        "coordinate_jitter_fraction": 0.18,
+        "support_candidate_contamination": 0.20,
+        "support_candidate_miss": 0.12
+      },
+      "geometry": {}
+    },
+    "occlusion_outlier": {
+      "sensor": {
+        "noise_mm": 0.85,
+        "heteroscedasticity": 1.2,
+        "dropout": 0.12,
+        "outlier_fraction": 0.07,
+        "occlusion_fraction": 0.30,
+        "pose_translation_mm": 10.0,
+        "pose_rotation_deg": 1.2,
+        "density_jitter": 0.12,
+        "coordinate_jitter_fraction": 0.15,
+        "support_candidate_contamination": 0.25,
+        "support_candidate_miss": 0.15
+      },
+      "geometry": {}
+    },
+    "pose_support": {
+      "sensor": {
+        "noise_mm": 0.8,
+        "heteroscedasticity": 1.1,
+        "dropout": 0.10,
+        "outlier_fraction": 0.025,
+        "occlusion_fraction": 0.12,
+        "pose_translation_mm": 16.0,
+        "pose_rotation_deg": 2.2,
+        "density_jitter": 0.12,
+        "coordinate_jitter_fraction": 0.15,
+        "support_candidate_contamination": 0.35,
+        "support_candidate_miss": 0.25
+      },
+      "geometry": {}
+    }
+  },
+  "unseen_domains": {
+    "compound_extreme": {
+      "sensor": {
+        "noise_mm": 2.2,
+        "heteroscedasticity": 2.8,
+        "dropout": 0.32,
+        "outlier_fraction": 0.09,
+        "occlusion_fraction": 0.32,
+        "pose_translation_mm": 20.0,
+        "pose_rotation_deg": 3.0,
+        "density_jitter": 0.32,
+        "coordinate_jitter_fraction": 0.22,
+        "support_candidate_contamination": 0.40,
+        "support_candidate_miss": 0.25
+      },
+      "geometry": {}
+    },
+    "pose_extrapolation": {
+      "sensor": {
+        "noise_mm": 0.9,
+        "heteroscedasticity": 1.3,
+        "dropout": 0.12,
+        "outlier_fraction": 0.03,
+        "occlusion_fraction": 0.12,
+        "pose_translation_mm": 32.0,
+        "pose_rotation_deg": 4.5,
+        "density_jitter": 0.15,
+        "coordinate_jitter_fraction": 0.15,
+        "support_candidate_contamination": 0.30,
+        "support_candidate_miss": 0.20
+      },
+      "geometry": {}
+    },
+    "support_failure": {
+      "sensor": {
+        "noise_mm": 1.0,
+        "heteroscedasticity": 1.5,
+        "dropout": 0.16,
+        "outlier_fraction": 0.04,
+        "occlusion_fraction": 0.20,
+        "pose_translation_mm": 14.0,
+        "pose_rotation_deg": 1.8,
+        "density_jitter": 0.18,
+        "coordinate_jitter_fraction": 0.18,
+        "support_candidate_contamination": 0.75,
+        "support_candidate_miss": 0.60
+      },
+      "geometry": {}
+    },
+    "geometry_amplitude": {
+      "sensor": {
+        "noise_mm": 1.0,
+        "heteroscedasticity": 1.5,
+        "dropout": 0.16,
+        "outlier_fraction": 0.04,
+        "occlusion_fraction": 0.18,
+        "pose_translation_mm": 13.0,
+        "pose_rotation_deg": 1.6,
+        "density_jitter": 0.18,
+        "coordinate_jitter_fraction": 0.18,
+        "support_candidate_contamination": 0.30,
+        "support_candidate_miss": 0.20
+      },
+      "geometry": {
+        "panel_count": 5,
+        "panel_width_mm": 800.0,
+        "height_mm": 2300.0,
+        "joint_gap_mm": 35.0,
+        "amplitude_mm": 32.0,
+        "joint_slip_mm": 8.0
+      }
+    }
+  }
+}

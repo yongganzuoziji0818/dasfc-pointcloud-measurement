@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "ROCKFALL-DASFC-PHYSICAL-V1",
+  "dataset_revision": "42a3947d960c8163157c915dea847cda96904a3d",
+  "pairs": [["E0", "E1"], ["E1", "E2"], ["E2", "E3"]],
+  "frontends": ["cascade_strong", "multiscale_trimmed_ptp", "robust_ptpl"],
+  "preparation": {
+    "voxel_size_mm": 5.0,
+    "moving_margin_mm": 50.0,
+    "context_margin_mm": 120.0,
+    "normal_halfwidth_mm": 100.0,
+    "interpolation_neighbors": 16,
+    "minimum_moving_reference_points": 1000,
+    "minimum_support_reference_points": 1000
+  },
+  "estimator": {
+    "mode": "cascade",
+    "icp_iterations": 14,
+    "trim_fraction": 0.82,
+    "ridge": 0.01,
+    "scale_neighbors": 20,
+    "scale_floor_mm": 0.35,
+    "query_workers": 16,
+    "multiscale_thresholds_mm": [100.0, 30.0, 10.0]
+  },
+  "alpha": 0.05,
+  "fallback": {
+    "reason": "unseen_external_physical_domain",
+    "scale": "event_median_raw_scale",
+    "reports": {
+      "cascade_strong": {
+        "path": "research/measurement_q2/evidence/formal/p1_frontend_robustness_20260719/cascade_strong/formal_report.json",
+        "sha256": "f45e3d4e70286bda40e288755cb76d8229def3b93477d9a24d9a3499c9f3d165",
+        "homoscedastic_pooled_quantile": 2.6949327644020467
+      },
+      "multiscale_trimmed_ptp": {
+        "path": "research/measurement_q2/evidence/formal/p1_frontend_robustness_20260719/multiscale_trimmed_ptp/formal_report.json",
+        "sha256": "0695a842e267961b7f86a8dad744cf5488c96612e34debb91e6175b265205c24",
+        "homoscedastic_pooled_quantile": 5.709582575182877
+      },
+      "robust_ptpl": {
+        "path": "research/measurement_q2/evidence/formal/p1_frontend_robustness_20260719/robust_ptpl/formal_report.json",
+        "sha256": "98faea16c1a4aaff87a203d5c4ff15c4715b24522c27a8a72a27e115414c9fc5",
+        "homoscedastic_pooled_quantile": 5.777970278691589
+      }
+    }
+  },
+  "reporting": {
+    "independent_unit": "physical_scan_pair_event",
+    "population_p_values": false,
+    "vector_interval_claim": false,
+    "normal_component_interval_only": true,
+    "retain_failures": true,
+    "silent_retry": false
+  }
+}
+

@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "status": "REJECTOR_CONFIRMATION_V2_ANALYZED",
+  "independent_unit": "complete synthetic scan pair",
+  "primary_scope": "all eight domains",
+  "primary_hypothesis": "scale-only AURC is lower than residual-only, OOD-only, and the v1 combined score",
+  "overall": {
+    "n_scan_pairs": 480,
+    "domains": [
+      "compound_extreme",
+      "geometry_amplitude",
+      "noise_density",
+      "nominal",
+      "occlusion_outlier",
+      "pose_extrapolation",
+      "pose_support",
+      "support_failure"
+    ],
+    "aurc": {
+      "score_scale": 2.2114809754013365,
+      "score_residual": 2.5359217327630685,
+      "score_ood": 2.5151791964739796,
+      "score_combined": 2.4685674269522124
+    },
+    "scale_vs_comparators": {
+      "score_residual": {
+        "observed_scale_minus_comparator": -0.32444075736173206,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.3739519794317925,
+          -0.28003192754043393
+        ],
+        "upper_ci_below_zero": true
+      },
+      "score_ood": {
+        "observed_scale_minus_comparator": -0.3036982210726431,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.345646509038341,
+          -0.2641210666246254
+        ],
+        "upper_ci_below_zero": true
+      },
+      "score_combined": {
+        "observed_scale_minus_comparator": -0.25708645155087595,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.28685728458957227,
+          -0.2278403974815098
+        ],
+        "upper_ci_below_zero": true
+      }
+    },
+    "risk_at_fixed_coverage_mm": {
+      "score_scale": {
+        "0.5": 2.2010078504620836,
+        "0.75": 2.7701001419203113,
+        "0.9": 2.9261152925301563,
+        "0.95": 2.9854864042539973
+      },
+      "score_residual": {
+        "0.5": 2.8564648929318324,
+        "0.75": 2.772251529044856,
+        "0.9": 2.9460972670913654,
+        "0.95": 2.996859910756781
+      },
+      "score_ood": {
+        "0.5": 2.3809524506510287,
+        "0.75": 2.7583273022961032,
+        "0.9": 2.9420896498131444,
+        "0.95": 2.986639975954741
+      },
+      "score_combined": {
+        "0.5": 2.2603397922816613,
+        "0.75": 2.76487308883016,
+        "0.9": 2.9268925841885314,
+        "0.95": 2.9882519640474654
+      }
+    },
+    "no_abstention_mean_risk_mm": 3.023848886029929,
+    "all_comparison_upper_bounds_below_zero": true
+  },
+  "known_secondary": {
+    "n_scan_pairs": 240,
+    "domains": [
+      "noise_density",
+      "nominal",
+      "occlusion_outlier",
+      "pose_support"
+    ],
+    "aurc": {
+      "score_scale": 1.6383948046543346,
+      "score_residual": 1.6971215816601024,
+      "score_ood": 2.1442873595164578,
+      "score_combined": 2.088063928656122
+    },
+    "scale_vs_comparators": {
+      "score_residual": {
+        "observed_scale_minus_comparator": -0.05872677700576778,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.08656102097740367,
+          -0.03373069857416516
+        ],
+        "upper_ci_below_zero": true
+      },
+      "score_ood": {
+        "observed_scale_minus_comparator": -0.5058925548621231,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.5513396070107325,
+          -0.4612652941563924
+        ],
+        "upper_ci_below_zero": true
+      },
+      "score_combined": {
+        "observed_scale_minus_comparator": -0.44966912400178716,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.5032833447623989,
+          -0.39699753611413485
+        ],
+        "upper_ci_below_zero": true
+      }
+    },
+    "risk_at_fixed_coverage_mm": {
+      "score_scale": {
+        "0.5": 1.8047278765777202,
+        "0.75": 1.8945148150140287,
+        "0.9": 1.9906849708945316,
+        "0.95": 2.02671614660588
+      },
+      "score_residual": {
+        "0.5": 1.8115007121618139,
+        "0.75": 1.903820643562188,
+        "0.9": 2.001189935994981,
+        "0.95": 2.025861109522711
+      },
+      "score_ood": {
+        "0.5": 2.2438289945761385,
+        "0.75": 2.034510964833534,
+        "0.9": 2.0345462437304263,
+        "0.95": 2.0333168883625947
+      },
+      "score_combined": {
+        "0.5": 1.9975488819460485,
+        "0.75": 1.8975114106118167,
+        "0.9": 2.001189935994981,
+        "0.95": 2.025861109522711
+      }
+    },
+    "no_abstention_mean_risk_mm": 2.084044829301393,
+    "all_comparison_upper_bounds_below_zero": true
+  },
+  "unseen_secondary_empirical": {
+    "n_scan_pairs": 240,
+    "domains": [
+      "compound_extreme",
+      "geometry_amplitude",
+      "pose_extrapolation",
+      "support_failure"
+    ],
+    "aurc": {
+      "score_scale": 3.4729426785756266,
+      "score_residual": 4.370243916770663,
+      "score_ood": 3.4999039672077075,
+      "score_combined": 3.46021613659254
+    },
+    "scale_vs_comparators": {
+      "score_residual": {
+        "observed_scale_minus_comparator": -0.8973012381950367,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.9993186797035656,
+          -0.7828949484991387
+        ],
+        "upper_ci_below_zero": true
+      },
+      "score_ood": {
+        "observed_scale_minus_comparator": -0.026961288632080915,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.08100458973400429,
+          0.03229682932519869
+        ],
+        "upper_ci_below_zero": false
+      },
+      "score_combined": {
+        "observed_scale_minus_comparator": 0.012726541983086648,
+        "domain_stratified_bootstrap_95_ci": [
+          -0.009812872440971043,
+          0.04032997164227582
+        ],
+        "upper_ci_below_zero": false
+      }
+    },
+    "risk_at_fixed_coverage_mm": {
+      "score_scale": {
+        "0.5": 4.102684131955593,
+        "0.75": 4.000972373347105,
+        "0.9": 3.987088154201336,
+        "0.95": 3.974016644145465
+      },
+      "score_residual": {
+        "0.5": 4.10200173578924,
+        "0.75": 4.008936911152792,
+        "0.9": 3.980982682517044,
+        "0.95": 3.9732770824166117
+      },
+      "score_ood": {
+        "0.5": 4.10276686649672,
+        "0.75": 4.019109913023933,
+        "0.9": 3.989523472236239,
+        "0.95": 3.9664174371126246
+      },
+      "score_combined": {
+        "0.5": 4.110311372342795,
+        "0.75": 4.008579789285535,
+        "0.9": 3.9878535526906806,
+        "0.95": 3.979681695597404
+      }
+    },
+    "no_abstention_mean_risk_mm": 3.9636529427584644,
+    "all_comparison_upper_bounds_below_zero": false
+  },
+  "primary_gate_passed": true,
+  "nonconverged_method_rows": 0,
+  "analysis_parameters": {
+    "seed": 20260720,
+    "domain_stratified_bootstrap_repetitions": 10000
+  },
+  "claim_boundary": "v2 confirms only selective-risk ranking; unseen-domain coverage remains empirical"
+}

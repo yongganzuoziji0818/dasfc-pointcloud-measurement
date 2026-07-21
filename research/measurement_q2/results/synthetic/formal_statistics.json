@@ -1,0 +1,1407 @@
+{
+  "schema_version": "1.0",
+  "status": "FORMAL_STATISTICAL_ANALYSIS_COMPLETE",
+  "source_experiment_status": "CONFIRMATORY_EXECUTION_COMPLETE_UNANALYZED",
+  "independent_unit": "complete synthetic scan pair",
+  "confirmatory_scope": "known calibration groups only",
+  "unseen_scope": "empirical stress tests without formal coverage guarantee",
+  "integrity": {
+    "case_count": 480,
+    "known_case_count": 240,
+    "unseen_case_count": 240,
+    "method_count": 7,
+    "row_count": 3360,
+    "selection_row_count": 480,
+    "methods": [
+      "das_grouped",
+      "das_no_fallback",
+      "das_pointwise",
+      "das_pooled",
+      "homoscedastic_grouped",
+      "learned_grouped",
+      "raw_local_grouped"
+    ],
+    "nonconverged_method_rows": 0,
+    "point_estimation_runtime_seconds_per_scan_pair": {
+      "mean": 0.20796439420276633,
+      "median": 0.22129737213253975,
+      "p95": 0.2498948823660612,
+      "max": 0.2723715007305145,
+      "sum": 99.82290921732783
+    }
+  },
+  "paired_interval_score_contrasts": [
+    {
+      "baseline": "homoscedastic_grouped",
+      "difference_definition": "DAS-FC interval score minus baseline; negative favors DAS-FC",
+      "n_scan_pairs": 240,
+      "mean_difference_mm": -2.134811774635984,
+      "median_difference_mm": -1.438492159182906,
+      "sd_difference_mm": 1.8791796833723964,
+      "stratified_bootstrap_95_ci_mm": [
+        -2.361654470161735,
+        -1.9393845583437412
+      ],
+      "paired_cohen_dz": -1.1360338734637803,
+      "paired_t": {
+        "t": -17.599361090610902,
+        "df": 239,
+        "p_two_sided": 5.00686898048381e-45,
+        "p_holm_three_contrasts": 1.001373796096762e-44
+      },
+      "paired_sign_flip": {
+        "repetitions": 50000,
+        "p_two_sided": 1.999960000799984e-05
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 7.0,
+        "p_two_sided": 4.3836300055658255e-41
+      },
+      "difference_diagnostics": {
+        "skewness": -3.0460086922171477,
+        "shapiro_w": 0.6508809966721969,
+        "shapiro_p": 6.584918604252363e-22,
+        "qq_correlation": 0.8038290888450279,
+        "interpretation": "At n=240, Shapiro-Wilk is secondary; inference is triangulated with a domain-stratified bootstrap and paired sign-flip test."
+      },
+      "by_domain": {
+        "noise_density": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -1.2775366497674165,
+          "median_difference_mm": -1.265886879123788,
+          "sd_difference_mm": 0.455608943026107
+        },
+        "nominal": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -3.3973520454743578,
+          "median_difference_mm": -3.37981249910474,
+          "sd_difference_mm": 0.5058340285632015
+        },
+        "occlusion_outlier": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -2.520641735211243,
+          "median_difference_mm": -1.3015035829309278,
+          "sd_difference_mm": 3.256104064264572
+        },
+        "pose_support": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -1.3437166680909185,
+          "median_difference_mm": -1.316926211686864,
+          "sd_difference_mm": 0.2879821564300789
+        }
+      },
+      "role": "primary"
+    },
+    {
+      "baseline": "raw_local_grouped",
+      "difference_definition": "DAS-FC interval score minus baseline; negative favors DAS-FC",
+      "n_scan_pairs": 240,
+      "mean_difference_mm": -23.047785548251014,
+      "median_difference_mm": -25.98655366138789,
+      "sd_difference_mm": 7.9675275400438155,
+      "stratified_bootstrap_95_ci_mm": [
+        -23.346525939657162,
+        -22.770545572875015
+      ],
+      "paired_cohen_dz": -2.892714889583459,
+      "paired_t": {
+        "t": -44.813746370731856,
+        "df": 239,
+        "p_two_sided": 2.705156731228439e-118,
+        "p_holm_three_contrasts": 8.115470193685318e-118
+      },
+      "paired_sign_flip": {
+        "repetitions": 50000,
+        "p_two_sided": 1.999960000799984e-05
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 0.0,
+        "p_two_sided": 4.015256434384509e-41
+      },
+      "difference_diagnostics": {
+        "skewness": 0.7214140498978919,
+        "shapiro_w": 0.8174248772244914,
+        "shapiro_p": 4.375391254986082e-16,
+        "qq_correlation": 0.905473403526609,
+        "interpretation": "At n=240, Shapiro-Wilk is secondary; inference is triangulated with a domain-stratified bootstrap and paired sign-flip test."
+      },
+      "by_domain": {
+        "noise_density": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -28.33165617564397,
+          "median_difference_mm": -28.199423221962952,
+          "sd_difference_mm": 1.4008018712692778
+        },
+        "nominal": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -10.088210643319723,
+          "median_difference_mm": -10.076837708859857,
+          "sd_difference_mm": 0.7079744273884789
+        },
+        "occlusion_outlier": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -28.782935861670403,
+          "median_difference_mm": -27.56865561223679,
+          "sd_difference_mm": 3.9864412017735456
+        },
+        "pose_support": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -24.988339512369983,
+          "median_difference_mm": -24.851132909234373,
+          "sd_difference_mm": 1.5264178125699113
+        }
+      },
+      "role": "secondary"
+    },
+    {
+      "baseline": "learned_grouped",
+      "difference_definition": "DAS-FC interval score minus baseline; negative favors DAS-FC",
+      "n_scan_pairs": 240,
+      "mean_difference_mm": -1.4513365174333857,
+      "median_difference_mm": -0.9688841969580952,
+      "sd_difference_mm": 1.6242542917435292,
+      "stratified_bootstrap_95_ci_mm": [
+        -1.5556527917137444,
+        -1.3341193924046926
+      ],
+      "paired_cohen_dz": -0.8935402078423769,
+      "paired_t": {
+        "t": -13.842665376560959,
+        "df": 239,
+        "p_two_sided": 2.1392482180806754e-32,
+        "p_holm_three_contrasts": 2.1392482180806754e-32
+      },
+      "paired_sign_flip": {
+        "repetitions": 50000,
+        "p_two_sided": 1.999960000799984e-05
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 243.0,
+        "p_two_sided": 1.5057600775156467e-29
+      },
+      "difference_diagnostics": {
+        "skewness": -0.8415262947156654,
+        "shapiro_w": 0.8354135316837371,
+        "shapiro_p": 3.0375971751153717e-15,
+        "qq_correlation": 0.9150840884379394,
+        "interpretation": "At n=240, Shapiro-Wilk is secondary; inference is triangulated with a domain-stratified bootstrap and paired sign-flip test."
+      },
+      "by_domain": {
+        "noise_density": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -0.5702676177357624,
+          "median_difference_mm": -0.6000132183325002,
+          "sd_difference_mm": 0.38487535642230275
+        },
+        "nominal": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": 0.0,
+          "median_difference_mm": 0.0,
+          "sd_difference_mm": 0.0
+        },
+        "occlusion_outlier": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -3.561171759694007,
+          "median_difference_mm": -4.208335410243074,
+          "sd_difference_mm": 1.7266760454729968
+        },
+        "pose_support": {
+          "n_scan_pairs": 60,
+          "mean_difference_mm": -1.673906692303773,
+          "median_difference_mm": -1.6936306346016181,
+          "sd_difference_mm": 0.2206049601065503
+        }
+      },
+      "role": "secondary"
+    }
+  ],
+  "coverage_by_domain": [
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 59,
+      "simultaneous_coverage": 0.9833333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9114487027240993,
+        0.9970518402052136
+      ],
+      "mean_point_coverage": 0.9998931623931624,
+      "mean_interval_width_mm": 14.071636111517462,
+      "mean_interval_score_mm": 14.074071797404702,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 14.642122706091355,
+      "mean_interval_score_mm": 14.644339415140466,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 2,
+      "simultaneous_coverage": 0.03333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.009189319256197877,
+        0.113637742743086
+      ],
+      "mean_point_coverage": 0.9467681623931623,
+      "mean_interval_width_mm": 8.36641171921444,
+      "mean_interval_score_mm": 9.557664029889853,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 59,
+      "simultaneous_coverage": 0.9833333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9114487027240993,
+        0.9970518402052136
+      ],
+      "mean_point_coverage": 0.9999732905982907,
+      "mean_interval_width_mm": 16.196319129238894,
+      "mean_interval_score_mm": 16.196352688562055,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 15.350972864707217,
+      "mean_interval_score_mm": 15.351608447172119,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 14.642122706091355,
+      "mean_interval_score_mm": 14.644339415140466,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "noise_density",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 42.40534844889825,
+      "mean_interval_score_mm": 42.40572797304867,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 7.61996584810005,
+      "mean_interval_score_mm": 7.61996584810005,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 7.61996584810005,
+      "mean_interval_score_mm": 7.61996584810005,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.9469017094017094,
+      "mean_interval_width_mm": 4.4258444780536434,
+      "mean_interval_score_mm": 4.962381978210906,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 9.035740900953906,
+      "mean_interval_score_mm": 9.035740900953906,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 11.016816355741435,
+      "mean_interval_score_mm": 11.01731789357441,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 7.61996584810005,
+      "mean_interval_score_mm": 7.61996584810005,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "nominal",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 59,
+      "simultaneous_coverage": 0.9833333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9114487027240993,
+        0.9970518402052136
+      ],
+      "mean_point_coverage": 0.9999732905982907,
+      "mean_interval_width_mm": 17.708139647222,
+      "mean_interval_score_mm": 17.70817649141977,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 53,
+      "simultaneous_coverage": 0.8833333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7782121197582914,
+        0.9423227935994396
+      ],
+      "mean_point_coverage": 0.9970352564102565,
+      "mean_interval_width_mm": 11.474447611874,
+      "mean_interval_score_mm": 11.65041455200506,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9977297008547008,
+      "mean_interval_width_mm": 15.087382463883523,
+      "mean_interval_score_mm": 15.211586311699064,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.9357905982905982,
+      "mean_interval_width_mm": 7.345656714388528,
+      "mean_interval_score_mm": 9.433741072273003,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 56,
+      "simultaneous_coverage": 0.9333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8407464268680283,
+        0.9737713012754938
+      ],
+      "mean_point_coverage": 0.9978098290598291,
+      "mean_interval_width_mm": 12.238727379597549,
+      "mean_interval_score_mm": 12.352819894608741,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 56,
+      "simultaneous_coverage": 0.9333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8407464268680283,
+        0.9737713012754938
+      ],
+      "mean_point_coverage": 0.9995459401709401,
+      "mean_interval_width_mm": 14.164374371495846,
+      "mean_interval_score_mm": 14.1710562872163,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9977297008547008,
+      "mean_interval_width_mm": 15.087382463883523,
+      "mean_interval_score_mm": 15.211586311699064,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "occlusion_outlier",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9995459401709401,
+      "mean_interval_width_mm": 40.42071373907543,
+      "mean_interval_score_mm": 40.43335041367546,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 11.526844405260272,
+      "mean_interval_score_mm": 11.527414271453813,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 13.19955792575745,
+      "mean_interval_score_mm": 13.201320963757581,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.9545405982905983,
+      "mean_interval_width_mm": 7.475248494099999,
+      "mean_interval_score_mm": 8.218972240327622,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 54,
+      "simultaneous_coverage": 0.9,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7985053527602123,
+        0.9533571655261158
+      ],
+      "mean_point_coverage": 0.9995726495726495,
+      "mean_interval_width_mm": 10.401200576919344,
+      "mean_interval_score_mm": 10.406219475102887,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999465811965813,
+      "mean_interval_width_mm": 12.870902410523568,
+      "mean_interval_score_mm": 12.871130939544729,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9999198717948717,
+      "mean_interval_width_mm": 13.19955792575745,
+      "mean_interval_score_mm": 13.201320963757581,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "domain": "pose_support",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.999866452991453,
+      "mean_interval_width_mm": 36.514435008743625,
+      "mean_interval_score_mm": 36.5157537838238,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 63.559108099660605,
+      "mean_interval_score_mm": 63.559108099660605,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 6,
+      "simultaneous_coverage": 0.1,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.04664283447388416,
+        0.20149464723978772
+      ],
+      "mean_point_coverage": 0.9638307912221573,
+      "mean_interval_width_mm": 16.254899251758342,
+      "mean_interval_score_mm": 18.036816423029684,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 53,
+      "simultaneous_coverage": 0.8833333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7782121197582914,
+        0.9423227935994396
+      ],
+      "mean_point_coverage": 0.9993856837606838,
+      "mean_interval_width_mm": 28.39696599344245,
+      "mean_interval_score_mm": 28.440427429652907,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 45.850980420602404,
+      "mean_interval_score_mm": 45.850980420602404,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 63.559108099660605,
+      "mean_interval_score_mm": 63.559108099660605,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 6,
+      "simultaneous_coverage": 0.1,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.04664283447388416,
+        0.20149464723978772
+      ],
+      "mean_point_coverage": 0.9638307912221573,
+      "mean_interval_width_mm": 16.254899251758342,
+      "mean_interval_score_mm": 18.036816423029684,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "compound_extreme",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 93.87632398492512,
+      "mean_interval_score_mm": 93.87632398492512,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9998397435897436,
+      "mean_interval_width_mm": 24.62103670495976,
+      "mean_interval_score_mm": 24.62434935530935,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 2,
+      "simultaneous_coverage": 0.03333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.009189319256197877,
+        0.113637742743086
+      ],
+      "mean_point_coverage": 0.9808012512030799,
+      "mean_interval_width_mm": 14.691039986727713,
+      "mean_interval_score_mm": 16.0518928514982,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.85025526887293,
+      "mean_interval_width_mm": 11.000197500219075,
+      "mean_interval_score_mm": 17.47974419105759,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 10,
+      "simultaneous_coverage": 0.16666666666666666,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0931317697919145,
+        0.2803161316361453
+      ],
+      "mean_point_coverage": 0.9930608974358974,
+      "mean_interval_width_mm": 17.761398887535226,
+      "mean_interval_score_mm": 18.06912605538768,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9998397435897436,
+      "mean_interval_width_mm": 24.62103670495976,
+      "mean_interval_score_mm": 24.62434935530935,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 2,
+      "simultaneous_coverage": 0.03333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.009189319256197877,
+        0.113637742743086
+      ],
+      "mean_point_coverage": 0.9808012512030799,
+      "mean_interval_width_mm": 14.691039986727713,
+      "mean_interval_score_mm": 16.0518928514982,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "geometry_amplitude",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 30,
+      "simultaneous_coverage": 0.5,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.3773502424155577,
+        0.6226497575844423
+      ],
+      "mean_point_coverage": 0.9988781588559019,
+      "mean_interval_width_mm": 45.77077317969223,
+      "mean_interval_score_mm": 45.793621386587915,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 16.607316951344007,
+      "mean_interval_score_mm": 16.607316951344007,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9986645299145299,
+      "mean_interval_width_mm": 13.397304407847574,
+      "mean_interval_score_mm": 13.443796310829162,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 1,
+      "simultaneous_coverage": 0.016666666666666666,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0029481597947862495,
+        0.08855129727590061
+      ],
+      "mean_point_coverage": 0.9297275641025641,
+      "mean_interval_width_mm": 7.4198242991417045,
+      "mean_interval_score_mm": 8.955242428575424,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 51,
+      "simultaneous_coverage": 0.85,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7388541093022145,
+        0.9190255941983225
+      ],
+      "mean_point_coverage": 0.9989850427350427,
+      "mean_interval_width_mm": 11.980372084215553,
+      "mean_interval_score_mm": 12.002019564168759,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 60,
+      "simultaneous_coverage": 1.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "mean_point_coverage": 1.0,
+      "mean_interval_width_mm": 16.607316951344007,
+      "mean_interval_score_mm": 16.607316951344007,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 58,
+      "simultaneous_coverage": 0.9666666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "mean_point_coverage": 0.9986645299145299,
+      "mean_interval_width_mm": 13.397304407847574,
+      "mean_interval_score_mm": 13.443796310829162,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "pose_extrapolation",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 57,
+      "simultaneous_coverage": 0.95,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "mean_point_coverage": 0.9999198717948719,
+      "mean_interval_width_mm": 36.471223061177916,
+      "mean_interval_score_mm": 36.47152888957562,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "das_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 21,
+      "simultaneous_coverage": 0.35,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.24167774406017556,
+        0.47637381158245135
+      ],
+      "mean_point_coverage": 0.9713675213675214,
+      "mean_interval_width_mm": 18.36983890746422,
+      "mean_interval_score_mm": 19.14346989402559,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.7988782051282052,
+      "mean_interval_width_mm": 14.969681768523824,
+      "mean_interval_score_mm": 23.169155351681614,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "das_pointwise",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.14727564102564103,
+      "mean_interval_width_mm": 8.207284626183466,
+      "mean_interval_score_mm": 83.19729337142812,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "das_pooled",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.6648771367521367,
+      "mean_interval_width_mm": 13.251839889808963,
+      "mean_interval_score_mm": 27.642808287773754,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 21,
+      "simultaneous_coverage": 0.35,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.24167774406017556,
+        0.47637381158245135
+      ],
+      "mean_point_coverage": 0.9713675213675214,
+      "mean_interval_width_mm": 18.36983890746422,
+      "mean_interval_score_mm": 19.14346989402559,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "learned_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.7988782051282052,
+      "mean_interval_width_mm": 14.969681768523824,
+      "mean_interval_score_mm": 23.169155351681614,
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "domain": "support_failure",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 60,
+      "simultaneous_successes": 0,
+      "simultaneous_coverage": 0.0,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0,
+        0.06017185214208986
+      ],
+      "mean_point_coverage": 0.9388621794871795,
+      "mean_interval_width_mm": 43.950647152363935,
+      "mean_interval_score_mm": 47.02456980050782,
+      "failure_count": 0
+    }
+  ],
+  "aggregate_by_method": [
+    {
+      "domain_status": "known_calibration_group",
+      "method": "das_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9583333333333334,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9250129960961526,
+        0.9772125772907518
+      ],
+      "mean_point_coverage": 0.9992120726495728,
+      "mean_interval_width_mm": 11.173223494187946,
+      "mean_interval_score_mm": 11.217966617240904,
+      "worst_domain_interval_score_mm": 14.074071797404702,
+      "worst_domain": "noise_density",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9708333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9410304560608658,
+        0.9858012693274998
+      ],
+      "mean_point_coverage": 0.9993923611111112,
+      "mean_interval_width_mm": 12.637257235958094,
+      "mean_interval_score_mm": 12.66930313467429,
+      "worst_domain_interval_score_mm": 15.211586311699064,
+      "worst_domain": "occlusion_outlier",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "das_pointwise",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.008333333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.0022882832869742294,
+        0.029869737988891934
+      ],
+      "mean_point_coverage": 0.9460002670940171,
+      "mean_interval_width_mm": 6.903290351439153,
+      "mean_interval_score_mm": 8.043189830175347,
+      "worst_domain_interval_score_mm": 9.557664029889853,
+      "worst_domain": "noise_density",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "das_pooled",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9541666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9198060053174897,
+        0.9742175174022611
+      ],
+      "mean_point_coverage": 0.9993389423076924,
+      "mean_interval_width_mm": 11.967996996677423,
+      "mean_interval_score_mm": 11.997783239806896,
+      "worst_domain_interval_score_mm": 16.196352688562055,
+      "worst_domain": "noise_density",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9541666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9198060053174897,
+        0.9742175174022611
+      ],
+      "mean_point_coverage": 0.9998330662393163,
+      "mean_interval_width_mm": 13.350766500617018,
+      "mean_interval_score_mm": 13.352778391876889,
+      "worst_domain_interval_score_mm": 15.351608447172119,
+      "worst_domain": "noise_density",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "learned_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9708333333333333,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9410304560608658,
+        0.9858012693274998
+      ],
+      "mean_point_coverage": 0.9993923611111112,
+      "mean_interval_width_mm": 12.637257235958094,
+      "mean_interval_score_mm": 12.66930313467429,
+      "worst_domain_interval_score_mm": 15.211586311699064,
+      "worst_domain": "occlusion_outlier",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "known_calibration_group",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.9583333333333334,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.9250129960961526,
+        0.9772125772907518
+      ],
+      "mean_point_coverage": 0.999826388888889,
+      "mean_interval_width_mm": 34.26215921098483,
+      "mean_interval_score_mm": 34.265752165491925,
+      "worst_domain_interval_score_mm": 42.40572797304867,
+      "worst_domain": "noise_density",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "das_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.8291666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7764581337597003,
+        0.8715038689454402
+      ],
+      "mean_point_coverage": 0.9928018162393163,
+      "mean_interval_width_mm": 30.789325165857143,
+      "mean_interval_score_mm": 30.983561075084886,
+      "worst_domain_interval_score_mm": 63.559108099660605,
+      "worst_domain": "compound_extreme",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "das_no_fallback",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.275,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.2223885797371556,
+        0.3347006842365459
+      ],
+      "mean_point_coverage": 0.9355436943669931,
+      "mean_interval_width_mm": 14.828231353714363,
+      "mean_interval_score_mm": 17.675415234259667,
+      "worst_domain_interval_score_mm": 23.169155351681614,
+      "worst_domain": "support_failure",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "das_pointwise",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.225,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.17674089469323342,
+        0.28192376127462393
+      ],
+      "mean_point_coverage": 0.7316610394404548,
+      "mean_interval_width_mm": 13.756068104746673,
+      "mean_interval_score_mm": 34.5181768551785,
+      "worst_domain_interval_score_mm": 83.19729337142812,
+      "worst_domain": "support_failure",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "das_pooled",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.5041666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.44134585989980735,
+        0.5668561907673463
+      ],
+      "mean_point_coverage": 0.9142307692307692,
+      "mean_interval_width_mm": 22.21114782054054,
+      "mean_interval_score_mm": 25.89123358198315,
+      "worst_domain_interval_score_mm": 45.850980420602404,
+      "worst_domain": "compound_extreme",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "homoscedastic_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.8291666666666667,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.7764581337597003,
+        0.8715038689454402
+      ],
+      "mean_point_coverage": 0.9928018162393163,
+      "mean_interval_width_mm": 30.789325165857143,
+      "mean_interval_score_mm": 30.983561075084886,
+      "worst_domain_interval_score_mm": 63.559108099660605,
+      "worst_domain": "compound_extreme",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "learned_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.275,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.2223885797371556,
+        0.3347006842365459
+      ],
+      "mean_point_coverage": 0.9355436943669931,
+      "mean_interval_width_mm": 14.828231353714363,
+      "mean_interval_score_mm": 17.675415234259667,
+      "worst_domain_interval_score_mm": 23.169155351681614,
+      "worst_domain": "support_failure",
+      "failure_count": 0
+    },
+    {
+      "domain_status": "unseen_empirical",
+      "method": "raw_local_grouped",
+      "n_scan_pairs": 240,
+      "simultaneous_coverage": 0.6125,
+      "simultaneous_coverage_wilson_95_ci": [
+        0.5495538698365403,
+        0.6719014981766092
+      ],
+      "mean_point_coverage": 0.9844150525344884,
+      "mean_interval_width_mm": 55.017241844539804,
+      "mean_interval_score_mm": 55.79151101539912,
+      "worst_domain_interval_score_mm": 93.87632398492512,
+      "worst_domain": "compound_extreme",
+      "failure_count": 0
+    }
+  ],
+  "known_domain_das_minus_homoscedastic_interval_score_mm": {
+    "noise_density": -1.2775366497674163,
+    "nominal": -3.397352045474359,
+    "occlusion_outlier": -2.5206417352112407,
+    "pose_support": -1.3437166680909165
+  },
+  "rejector": {
+    "aurc": {
+      "score_scale": 2.2055877558456425,
+      "score_residual": 2.54375640442364,
+      "score_ood": 2.493504656837528,
+      "score_combined": 2.4099691242689296
+    },
+    "lower_is_better": true,
+    "combined_vs_single": {
+      "score_scale": {
+        "observed_combined_minus_single": 0.20438136842328714,
+        "stratified_bootstrap_95_ci": [
+          0.1725414904927177,
+          0.23577650398232675
+        ],
+        "bootstrap_probability_combined_is_lower": 0.0
+      },
+      "score_residual": {
+        "observed_combined_minus_single": -0.13378728015471042,
+        "stratified_bootstrap_95_ci": [
+          -0.20255645262261918,
+          -0.07332496298180573
+        ],
+        "bootstrap_probability_combined_is_lower": 1.0
+      },
+      "score_ood": {
+        "observed_combined_minus_single": -0.08353553256859847,
+        "stratified_bootstrap_95_ci": [
+          -0.12575097757067513,
+          -0.042020421725889615
+        ],
+        "bootstrap_probability_combined_is_lower": 1.0
+      }
+    },
+    "frozen_hypothesis_passed": false,
+    "frozen_threshold_outcome": {
+      "retained": 344,
+      "rejected": 136,
+      "retained_mean_risk_mm": 2.7011755436314884,
+      "rejected_mean_risk_mm": 3.8537235853672684
+    }
+  },
+  "frozen_success_conditions": {
+    "primary_interval_score_effect": true,
+    "known_coverage_and_width_jointly": true,
+    "majority_and_worst_known_domain_advantage": true,
+    "combined_rejector_beats_all_single_scores": false
+  },
+  "writing_gate": {
+    "synthetic_formal_gate_passed": false,
+    "note": "This is only the synthetic formal gate. Real-data external validation, baseline closure, and deterministic reproduction remain separate gates."
+  },
+  "analysis_parameters": {
+    "random_seed": 20260719,
+    "stratified_bootstrap_repetitions": 10000,
+    "paired_sign_flip_repetitions": 50000,
+    "aurc_stratified_bootstrap_repetitions": 2000,
+    "multiple_comparison_correction": "Holm across three predeclared interval-score contrasts"
+  }
+}

@@ -1,0 +1,5 @@
+DAS-FC calibrates coverage intervals at the complete scan-pair field level
+Known-domain interval score fell by 2.135 mm under a fixed point estimator
+Pointwise 95% coverage yielded only 2 of 240 fully covered fields
+Effects stayed negative under 3 front ends and all 120 split settings
+Three physical events add sparse independent-reference displacement evidence

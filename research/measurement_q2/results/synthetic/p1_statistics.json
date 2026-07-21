@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "status": "P1_FRONTEND_ROBUSTNESS_ANALYSIS_COMPLETE",
+  "shared_scan_pairs": true,
+  "rows": [
+    {
+      "frontend": "cascade_strong",
+      "mean_das_minus_homoscedastic_score_mm": -2.0799304559061387,
+      "bootstrap_95_ci_mm": [
+        -2.2498641883097052,
+        -1.9358953661795375
+      ],
+      "paired_dz": -1.2687059206037945,
+      "known_coverage": 0.9458333333333333,
+      "known_mean_width_mm": 10.895439435877291,
+      "known_mean_interval_score_mm": 10.89751596669981,
+      "failure_count": 0,
+      "negative_effect": true,
+      "ci_excludes_zero_in_expected_direction": true
+    },
+    {
+      "frontend": "multiscale_trimmed_ptp",
+      "mean_das_minus_homoscedastic_score_mm": -2.1165284292149034,
+      "bootstrap_95_ci_mm": [
+        -2.5096069332353155,
+        -1.8080045599514167
+      ],
+      "paired_dz": -0.7231444763099416,
+      "known_coverage": 0.9458333333333333,
+      "known_mean_width_mm": 16.468067241695195,
+      "known_mean_interval_score_mm": 16.4710581827084,
+      "failure_count": 0,
+      "negative_effect": true,
+      "ci_excludes_zero_in_expected_direction": true
+    },
+    {
+      "frontend": "robust_ptpl",
+      "mean_das_minus_homoscedastic_score_mm": -8.036583393491084,
+      "bootstrap_95_ci_mm": [
+        -16.503134651051525,
+        -3.0008627005195194
+      ],
+      "paired_dz": -0.13323440302010972,
+      "known_coverage": 0.9416666666666667,
+      "known_mean_width_mm": 30.553070723278747,
+      "known_mean_interval_score_mm": 33.61291305556381,
+      "failure_count": 0,
+      "negative_effect": true,
+      "ci_excludes_zero_in_expected_direction": true
+    }
+  ],
+  "negative_effect_frontends": 3,
+  "ci_excluding_zero_frontends": 3,
+  "p1_gate_passed": true
+}

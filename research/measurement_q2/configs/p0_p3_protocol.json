@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "measurement-p0-p3-external-extension-20260719",
+  "status": "AUTHORIZED_DESIGN_FROZEN_EXECUTION_NOT_STARTED",
+  "cloud_only": true,
+  "alpha": 0.05,
+  "data": {
+    "primary_dataset": "STEEL-3dPointClouds",
+    "doi": "10.17603/ds2-1deq-4z12",
+    "designsafe_project": "PRJ-5743",
+    "full_file_download_allowed": false,
+    "max_project_cache_gb": 300,
+    "minimum_field_locations": 200,
+    "minimum_confirmatory_trajectories": 300,
+    "preferred_trajectories": 600,
+    "minimum_test_trajectories": 60,
+    "preferred_test_trajectories": 150,
+    "main_pairs_per_trajectory": 1
+  },
+  "frontends": [
+    "cascade_strong",
+    "multiscale_trimmed_ptp",
+    "robust_ptpl"
+  ],
+  "methods": [
+    "homoscedastic_pairmax",
+    "raw_local_pairmax",
+    "learned_unshrunk_pairmax",
+    "pointwise_marginal_negative_control",
+    "bonferroni_gaussian",
+    "classical_max_t",
+    "das_fc_grouped",
+    "das_fc_pooled"
+  ],
+  "repeated_splits": {
+    "seeds": [
+      2026071900, 2026071901, 2026071902, 2026071903, 2026071904,
+      2026071905, 2026071906, 2026071907, 2026071908, 2026071909,
+      2026071910, 2026071911, 2026071912, 2026071913, 2026071914,
+      2026071915, 2026071916, 2026071917, 2026071918, 2026071919,
+      2026071920, 2026071921, 2026071922, 2026071923, 2026071924,
+      2026071925, 2026071926, 2026071927, 2026071928, 2026071929
+    ],
+    "split_proportions": {
+      "tuning": 0.20,
+      "validation": 0.15,
+      "calibration": 0.35,
+      "test": 0.30
+    },
+    "calibration_sizes_per_group": [30, 60, 100, 150],
+    "required_expected_sign_repetitions": 27
+  },
+  "workers": 16,
+  "gpu_required": false,
+  "formal_execution_requires_exact_command_confirmation": true
+}

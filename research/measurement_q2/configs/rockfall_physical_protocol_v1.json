@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "ROCKFALL-PHYSICAL-V1",
+  "status": "FROZEN_BEFORE_DATA_AUDIT_AND_ALGORITHM_EXECUTION",
+  "frozen_date": "2026-07-21",
+  "dataset": {
+    "repository": "https://huggingface.co/datasets/zhaoyiww/Rockfall_Simulator",
+    "revision": "42a3947d960c8163157c915dea847cda96904a3d",
+    "license": "CC-BY-4.0",
+    "ts_to_tls_epoch_map": {
+      "E0": "epoch_1",
+      "E1": "epoch_2",
+      "E2": "epoch_3",
+      "E3": "epoch_4"
+    },
+    "moving_targets": ["T1", "T2", "T3", "T4"],
+    "stable_control": "T0"
+  },
+  "design": {
+    "primary_pairs": [["E0", "E1"], ["E1", "E2"], ["E2", "E3"]],
+    "secondary_pairs": [["E0", "E2"], ["E0", "E3"], ["E1", "E3"]],
+    "independent_unit": "physical_scan_pair_event",
+    "independent_apparatus_count": 1,
+    "calibration_policy": "external_test_only_no_training_tuning_or_recalibration",
+    "point_independence": false,
+    "prism_independence": false
+  },
+  "reference_gate": {
+    "stable_t0_max_range_mm": 0.25,
+    "moving_rigid_fit_max_rms_mm": 1.0,
+    "require_documented_or_independently_recoverable_ts_tls_frame": true
+  },
+  "reporting": {
+    "population_p_values": false,
+    "confirmatory_pairs": "consecutive_only",
+    "nominal_simultaneous_coverage_real_claim": false,
+    "retain_failures": true,
+    "silent_retry": false
+  }
+}
+

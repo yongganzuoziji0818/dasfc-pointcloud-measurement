@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.1",
+  "protocol_id": "ROCKFALL-PHYSICAL-V1.1",
+  "parent_protocol_id": "ROCKFALL-PHYSICAL-V1",
+  "amendment_date": "2026-07-21",
+  "amendment_before_algorithm_error_view": true,
+  "dataset_revision": "42a3947d960c8163157c915dea847cda96904a3d",
+  "D2_REFERENCE_V1_1": {
+    "required_targets": ["T0", "T1", "T2", "T3", "T4"],
+    "required_epochs": ["E0", "E1", "E2", "E3"],
+    "stable_t0_max_range_mm": 0.25,
+    "rigid_fit_role": "mandatory_diagnostic_not_validity_gate",
+    "direct_ts_coordinates_are_reference": true
+  },
+  "D3_FRAME": {
+    "candidate_channel": "blue_dominant",
+    "candidate_min_points": 500,
+    "required_candidates_per_epoch": 5,
+    "e0_fit_rms_max_mm": 5.0,
+    "e0_fit_max_residual_mm": 8.0,
+    "e0_second_best_rms_ratio_min": 2.0,
+    "tls_tracking_step_max_mm": 100.0,
+    "holdout_epoch_rms_max_mm": 5.0,
+    "holdout_epoch_max_residual_mm": 10.0,
+    "t0_tls_max_drift_mm": 2.0,
+    "future_ts_used_for_tracking": false
+  },
+  "unchanged": {
+    "external_test_only": true,
+    "population_p_values": false,
+    "real_nominal_95pct_simultaneous_coverage_claim": false,
+    "retain_parent_failure": true,
+    "silent_retry": false
+  }
+}
+

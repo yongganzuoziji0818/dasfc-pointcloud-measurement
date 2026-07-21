@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "status": "REAL_TRANSFER_ANALYSIS_COMPLETE",
+  "independent_cluster": "physical printed specimen",
+  "specimen_clusters": 38,
+  "device_acquisitions": 114,
+  "method_summaries": {
+    "published_coordinates": {
+      "n_specimen_clusters": 38,
+      "n_device_acquisitions": 114,
+      "mean_symmetric_distance_mm": 7.554765400784558,
+      "median_symmetric_distance_mm": 5.848494245262182,
+      "p95_symmetric_distance_mm": 15.082013447379737,
+      "max_symmetric_distance_mm": 54.21261421731955
+    },
+    "multiscale_p2p_icp": {
+      "n_specimen_clusters": 38,
+      "n_device_acquisitions": 114,
+      "mean_symmetric_distance_mm": 4.222301137713768,
+      "median_symmetric_distance_mm": 4.224311019384167,
+      "p95_symmetric_distance_mm": 7.3104824071833105,
+      "max_symmetric_distance_mm": 10.947168062708549
+    },
+    "cascade_strong_unmodified": {
+      "n_specimen_clusters": 38,
+      "n_device_acquisitions": 114,
+      "mean_symmetric_distance_mm": 4.538605704588252,
+      "median_symmetric_distance_mm": 4.3528537663276445,
+      "p95_symmetric_distance_mm": 7.873792304746613,
+      "max_symmetric_distance_mm": 10.995039687148441
+    }
+  },
+  "paired_method_contrasts": {
+    "cascade_minus_icp": {
+      "difference_definition": "first method minus second; negative favors first",
+      "mean_difference_mm": 0.3163045668744852,
+      "specimen_cluster_bootstrap_95_ci_mm": [
+        0.18532033793688155,
+        0.4762751832119546
+      ]
+    },
+    "cascade_minus_published": {
+      "difference_definition": "first method minus second; negative favors first",
+      "mean_difference_mm": -3.0161596961963055,
+      "specimen_cluster_bootstrap_95_ci_mm": [
+        -6.125029575787056,
+        -1.1545862140538734
+      ]
+    },
+    "icp_minus_published": {
+      "difference_definition": "first method minus second; negative favors first",
+      "mean_difference_mm": -3.332464263070791,
+      "specimen_cluster_bootstrap_95_ci_mm": [
+        -6.465903236053102,
+        -1.429294344295798
+      ]
+    }
+  },
+  "device_summaries": {
+    "2iPad_Scaniverse": {
+      "published_coordinates": {
+        "mean_symmetric_distance_mm": 9.621546456728211,
+        "median_symmetric_distance_mm": 7.4912302819261924,
+        "max_symmetric_distance_mm": 54.21261421731955
+      },
+      "multiscale_p2p_icp": {
+        "mean_symmetric_distance_mm": 5.659956702562786,
+        "median_symmetric_distance_mm": 5.569914143236105,
+        "max_symmetric_distance_mm": 10.947168062708549
+      },
+      "cascade_strong_unmodified": {
+        "mean_symmetric_distance_mm": 5.998164896429091,
+        "median_symmetric_distance_mm": 5.708091925906959,
+        "max_symmetric_distance_mm": 10.995039687148441
+      }
+    },
+    "3FARO_Focus": {
+      "published_coordinates": {
+        "mean_symmetric_distance_mm": 7.491490817390223,
+        "median_symmetric_distance_mm": 5.282074157535286,
+        "max_symmetric_distance_mm": 52.598844735550486
+      },
+      "multiscale_p2p_icp": {
+        "mean_symmetric_distance_mm": 4.601912221927669,
+        "median_symmetric_distance_mm": 4.244753760499972,
+        "max_symmetric_distance_mm": 7.562589286497267
+      },
+      "cascade_strong_unmodified": {
+        "mean_symmetric_distance_mm": 4.849137060153858,
+        "median_symmetric_distance_mm": 4.630150883035017,
+        "max_symmetric_distance_mm": 8.099970927156404
+      }
+    },
+    "4Creaform_HandySCAN3D": {
+      "published_coordinates": {
+        "mean_symmetric_distance_mm": 5.55125892823524,
+        "median_symmetric_distance_mm": 3.1944882622307844,
+        "max_symmetric_distance_mm": 53.51611033040334
+      },
+      "multiscale_p2p_icp": {
+        "mean_symmetric_distance_mm": 2.40503448865085,
+        "median_symmetric_distance_mm": 1.89062913573103,
+        "max_symmetric_distance_mm": 7.163384226891317
+      },
+      "cascade_strong_unmodified": {
+        "mean_symmetric_distance_mm": 2.768515157181811,
+        "median_symmetric_distance_mm": 2.135540320780186,
+        "max_symmetric_distance_mm": 7.679787089506547
+      }
+    }
+  },
+  "cascade_nonconvergence_count": 0,
+  "selective_risk_on_cascade_surface_disagreement": {
+    "scores": {
+      "scale_mean_mm": {
+        "aurc": 2.9715128575852487,
+        "specimen_cluster_bootstrap_95_ci": [
+          2.715343089489836,
+          3.2996262733471915
+        ],
+        "spearman_rho": 0.8579939652902939,
+        "spearman_p_acquisition_level_descriptive_only": 3.4449581881156393e-34
+      },
+      "scale_q95_mm": {
+        "aurc": 2.9367721821390225,
+        "specimen_cluster_bootstrap_95_ci": [
+          2.69348530737407,
+          3.257121442829628
+        ],
+        "spearman_rho": 0.9042708734128512,
+        "spearman_p_acquisition_level_descriptive_only": 3.3303957597179963e-43
+      },
+      "match_q95_mm": {
+        "aurc": 2.8587641449767522,
+        "specimen_cluster_bootstrap_95_ci": [
+          2.6275472535454556,
+          3.163913093545682
+        ],
+        "spearman_rho": 0.9755938518863532,
+        "spearman_p_acquisition_level_descriptive_only": 1.399351104593322e-75
+      }
+    },
+    "scale_mean_minus_match_q95_aurc": {
+      "observed": 0.1127487126084965,
+      "specimen_cluster_bootstrap_95_ci": [
+        0.06958937905733707,
+        0.16114788802194838
+      ]
+    },
+    "lower_aurc_is_better": true
+  },
+  "exploratory_external_transfer": true,
+  "claim_boundary": "single-state mesh/scan surface agreement, not displacement truth",
+  "writing_use": "scanner-domain and failure-detection evidence only; not deformation accuracy or conformal coverage",
+  "analysis_parameters": {
+    "seed": 20260719,
+    "specimen_cluster_bootstrap_repetitions": 10000
+  }
+}

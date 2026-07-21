@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.1",
+  "protocol_id": "SHREC2019-RESOLUTION-ROBUSTNESS-V1.1",
+  "parent_protocol_id": "SHREC2019-RESOLUTION-ROBUSTNESS-V1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "frozen_date": "2026-07-21",
+  "amendment_reason": "v1 Open3D front ends showed machine-precision parallel-reduction drift and failed the preregistered exact-reproduction gate; endpoints and algorithms are unchanged.",
+  "dataset": {
+    "doi": "10.17035/d.2019.0072003316",
+    "archive_sha256": "5e1a8dc86701c9bde0aeeee17aa4ffdbfc8b3bf1e344229bf2546e0476d541fe",
+    "audit_report_sha256": "adb10087ded24e1b77363889e2b4b28df5a2614e28ce8ce08b3741f660b97404",
+    "expected_scan_ids": 50,
+    "expected_unique_pairs": 76,
+    "duplicate_rule": "Deduplicate within each test set by first occurrence of (source,target); retain an audit warning for 043,045 in test-set0."
+  },
+  "design": {
+    "resolutions": ["hires", "lores"],
+    "directions": ["forward", "reverse"],
+    "frontends": [
+      "published_coordinates",
+      "cascade_strong",
+      "multiscale_trimmed_ptp",
+      "robust_ptpl"
+    ],
+    "smoke_pairs": ["0:040:043", "1:000:001", "2:030:011", "3:000:009"],
+    "normalization": "For each pair, use one common center and robust diagonal computed from the high-resolution source and target 10th/90th marginal quantiles; apply it unchanged to both resolutions and both directions.",
+    "workers": 16,
+    "randomness": "None; full mesh vertices, fixed pair order, deterministic algorithms.",
+    "deterministic_environment": {
+      "OMP_NUM_THREADS": 1,
+      "OMP_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": 1,
+      "OPENBLAS_NUM_THREADS": 1,
+      "NUMEXPR_NUM_THREADS": 1,
+      "OPEN3D_NUM_THREADS": 1
+    }
+  },
+  "endpoints": {
+    "primary_descriptive": [
+      "absolute high-vs-low symmetric mean surface-fit gap",
+      "high-vs-low rigid-translation gap in common dimensionless coordinates",
+      "high-vs-low rigid-rotation geodesic gap in degrees"
+    ],
+    "secondary_descriptive": [
+      "bidirectional rigid-cycle translation and rotation defects",
+      "post-alignment symmetric mean, median, and p95 nearest-surface distances",
+      "dataset-level Spearman association between match-distance p95 and resolution instability",
+      "deformation-test-set stratification",
+      "leave-one-scan-ID-out ranges of medians and paired method differences"
+    ],
+    "inferential_tests": "None. No p-values or population confidence intervals are permitted because physical specimen identity and independent-unit count are undocumented and scan IDs recur across pairs."
+  },
+  "interpretation": {
+    "raw_coordinates_role": "Negative-control fit baseline only. Its identity transform has zero transform and cycle gaps by construction and must not be ranked as a stable registration method on those endpoints.",
+    "manuscript_rewrite_gate": "All 76 unique pairs, four frontends, two resolutions, and two directions must be attempted; failures remain outcomes. A result paragraph may report descriptive robustness or failure evidence after exact deterministic reproduction and fallacy review.",
+    "prohibited_claims": [
+      "real correspondence accuracy",
+      "real displacement accuracy",
+      "real conformal or simultaneous coverage",
+      "76 independent physical specimens",
+      "absolute millimetre accuracy",
+      "railway sound-barrier field validation"
+    ]
+  }
+}
