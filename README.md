@@ -64,6 +64,6 @@ This package contains no Railway Sciences confidential data, private point cloud
 
 Citation metadata are provided in `CITATION.cff`. Release `v1.0.0` is permanently archived at https://doi.org/10.5281/zenodo.21477662.
 
-## License status
+## Copyright and license
 
-No open-source license has yet been granted for this repository. Copyright remains with the authors. Public visibility and scientific citation do not by themselves grant permission to redistribute or create derivative software. Dataset licenses are separate from the code license.
+Copyright (C) 2026 Yuan Liao et al. All rights reserved. No open-source license is granted for this repository. Public visibility and scientific citation do not by themselves grant permission to use, redistribute, modify, or create derivative software. Dataset licenses are separate from the code license. See `LICENSE` for the complete notice.
