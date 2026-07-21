@@ -371,11 +371,11 @@ DAS-FC aligns conformal interval calibration with the complete scan-pair displac
 
 ## Data availability
 
-3DPrintedShapes v1 is available from Zenodo at https://doi.org/10.5281/zenodo.19471431 under CC BY 4.0 [@gu2026printed]. SHREC'19 is available at https://doi.org/10.17035/d.2019.0072003316 [@dyke2019]. The ETH Rockfall Simulator is available under CC BY 4.0 through https://github.com/gseg-ethz/fusion4landslide and its linked archive [@wang2025rgb]; we froze revision `42a3947d960c8163157c915dea847cda96904a3d`. Checksums and audit manifests accompany the project evidence, and synthetic cases are generated deterministically from documented configurations and seeds. Source code and compact results are archived at https://doi.org/10.5281/zenodo.21477662.
+3DPrintedShapes v1 is available from Zenodo at https://doi.org/10.5281/zenodo.19471431 under CC BY 4.0 [@gu2026printed]. SHREC'19 is available at https://doi.org/10.17035/d.2019.0072003316 [@dyke2019]. The ETH Rockfall Simulator is available under CC BY 4.0 through https://github.com/gseg-ethz/fusion4landslide and its linked archive [@wang2025rgb]; we froze revision `42a3947d960c8163157c915dea847cda96904a3d`. Checksums and audit manifests accompany the project evidence, and synthetic cases are generated deterministically from documented configurations and seeds. Source code and compact results are archived at https://doi.org/10.5281/zenodo.21481638.
 
 ## Code availability
 
-Research code, frozen configurations, analysis scripts, an environment snapshot, compact results, and SHA-256 manifests are available at https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement and permanently archived at https://doi.org/10.5281/zenodo.21477662 (version v1.0.0).
+Research code, frozen configurations, analysis scripts, an environment snapshot, compact results, and SHA-256 manifests are available under the MIT License at https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement and permanently archived at https://doi.org/10.5281/zenodo.21481638 (version v1.0.1).
 
 ## Ethics declaration
 

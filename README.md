@@ -1,6 +1,6 @@
 # DAS-FC point-cloud measurement
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21477662.svg)](https://doi.org/10.5281/zenodo.21477662)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21481638.svg)](https://doi.org/10.5281/zenodo.21481638)
 
 This repository is the public research package for **domain-adaptive shrinkage full-field conformal calibration (DAS-FC)**, a scan-pair-aligned interval procedure for structural point-cloud normal-displacement fields.
 
@@ -62,7 +62,7 @@ This package contains no Railway Sciences confidential data, private point cloud
 
 ## Citation and archive
 
-Citation metadata are provided in `CITATION.cff`. Release `v1.0.0` remains permanently archived at https://doi.org/10.5281/zenodo.21477662. Release `v1.0.1` adopts the MIT License and will be archived separately so that the historical record is not overwritten.
+Citation metadata are provided in `CITATION.cff`. The current MIT-licensed release `v1.0.1` is permanently archived at https://doi.org/10.5281/zenodo.21481638. Historical release `v1.0.0` remains available at https://doi.org/10.5281/zenodo.21477662.
 
 ## License
 

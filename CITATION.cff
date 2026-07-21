@@ -5,7 +5,9 @@ type: software
 version: 1.0.1
 date-released: 2026-07-22
 license: MIT
+doi: "10.5281/zenodo.21481638"
 repository-code: "https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement"
+url: "https://doi.org/10.5281/zenodo.21481638"
 abstract: >-
   Research code, frozen protocols, compact results, and manuscript materials for
   scan-pair-aligned conformal coverage intervals for structural point-cloud
