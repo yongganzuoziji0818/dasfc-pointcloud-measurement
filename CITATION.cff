@@ -4,7 +4,9 @@ title: "DAS-FC point-cloud measurement"
 type: software
 version: 1.0.0
 date-released: 2026-07-21
+doi: "10.5281/zenodo.21477662"
 repository-code: "https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement"
+url: "https://doi.org/10.5281/zenodo.21477662"
 abstract: >-
   Research code, frozen protocols, compact results, and manuscript materials for
   scan-pair-aligned conformal coverage intervals for structural point-cloud
