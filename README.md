@@ -1,6 +1,6 @@
 # DAS-FC point-cloud measurement
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21481638.svg)](https://doi.org/10.5281/zenodo.21481638)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21477661.svg)](https://doi.org/10.5281/zenodo.21477661)
 
 This repository is the public research package for **domain-adaptive shrinkage full-field conformal calibration (DAS-FC)**, a scan-pair-aligned interval procedure for structural point-cloud normal-displacement fields.
 
@@ -12,6 +12,7 @@ The central measurement target is simultaneous coverage of every frozen valid lo
 - Unseen-domain, grid, deformation-family, repeated-allocation, and registration-frontend studies test robustness and failure behavior.
 - Public 3DPrintedShapes and SHREC scans test device and cross-resolution behavior without claiming displacement truth.
 - Three ETH Rockfall Simulator scan-pair events provide independent Leica TS60 references at four sparse targets per event.
+- A post-confirmatory audit shows all three Rockfall events outside the synthetic calibration envelope and checks two conservative reference-tolerance constructions without retuning the method.
 
 The Rockfall evidence closes the absence of physical displacement truth only at sparse endpoints. It does **not** establish dense-field truth, population-level 0.95 coverage, independent-apparatus replication, railway-field validation, or a GUM-compliant uncertainty budget.
 
@@ -25,7 +26,7 @@ research/measurement_q2/
   protocols/        Preregistered and algorithm protocols
   results/          Compact synthetic and public-data result tables
   reproducibility/  Environment, manifests, and manuscript QA reports
-  manuscript/       Manuscript source, references, and seven figures
+  manuscript/       Manuscript source, references, and eight figures
   tests/            Core unit tests
 ```
 
@@ -62,7 +63,7 @@ This package contains no Railway Sciences confidential data, private point cloud
 
 ## Citation and archive
 
-Citation metadata are provided in `CITATION.cff`. The current MIT-licensed release `v1.0.1` is permanently archived at https://doi.org/10.5281/zenodo.21481638. Historical release `v1.0.0` remains available at https://doi.org/10.5281/zenodo.21477662.
+Citation metadata are provided in `CITATION.cff`. Release `v1.0.2` and all future versions are resolved by the Zenodo concept DOI https://doi.org/10.5281/zenodo.21477661. Version-specific records preserve earlier releases, including `v1.0.1` at https://doi.org/10.5281/zenodo.21481638 and `v1.0.0` at https://doi.org/10.5281/zenodo.21477662.
 
 ## License
 

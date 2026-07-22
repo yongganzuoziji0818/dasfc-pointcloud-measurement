@@ -1,0 +1,34 @@
+{
+  "captured_at_utc": "2026-07-22T01:45:06.971566+00:00",
+  "hostname": "gpufree-container",
+  "os": "Linux-5.15.0-168-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cgroup": {
+    "cpu_max": "2400000 100000",
+    "effective_cpu_cores": 24.0,
+    "cpuset_cpus_effective": "0-223",
+    "memory_max_bytes": 128849018880,
+    "memory_current_bytes": 114100936704,
+    "memory_available_within_limit_bytes": 14748082176
+  },
+  "persistent_disk": {
+    "path": "/root/gpufree-data/workspace/sound-barrier-measurement",
+    "total_bytes": 1133945585664,
+    "used_bytes": 178118877184,
+    "free_bytes": 955809931264
+  },
+  "gpu": [
+    {
+      "index": 0,
+      "name": "NVIDIA L40S",
+      "memory_total_mib": 46068,
+      "memory_used_mib": 2225,
+      "memory_free_mib": 43234,
+      "driver": "580.126.09",
+      "compute_capability": "8.9"
+    }
+  ],
+  "environment": {
+    "cuda_visible_devices": "0"
+  }
+}

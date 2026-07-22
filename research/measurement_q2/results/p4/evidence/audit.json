@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": {
+    "status_complete": true,
+    "all_inputs_hash_verified": true,
+    "synthetic_pairs_240": true,
+    "rockfall_events_3": true,
+    "domain_event_rows_3": true,
+    "sensitivity_target_rows_36": true,
+    "sensitivity_event_rows_9": true,
+    "sensitivity_frontends_3": true,
+    "field_reconstruction_passed": true,
+    "pointwise_example_fails_simultaneously": true,
+    "das_example_covers_simultaneously": true,
+    "pointwise_example_marginal_at_least_090": true,
+    "report_all_finite": true,
+    "required_files_present_nonempty": true,
+    "synthetic_csv_rows_240": true,
+    "rockfall_csv_rows_3": true,
+    "sensitivity_csv_rows_36": true,
+    "field_csv_nonempty": true
+  },
+  "required_files": {
+    "p4_report.json": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/p4_report.json",
+    "synthetic_tuning_diagnostics.csv": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/synthetic_tuning_diagnostics.csv",
+    "rockfall_diagnostics.csv": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/rockfall_diagnostics.csv",
+    "rockfall_reference_sensitivity_targets.csv": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/rockfall_reference_sensitivity_targets.csv",
+    "field_failure_example.csv": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/field_failure_example.csv",
+    "figure8_pdf": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/figure8_p4_submission_strengthening.pdf",
+    "figure8_svg": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/figure8_p4_submission_strengthening.svg",
+    "figure8_png": "/workspace/sound-barrier-measurement/runs/p4-submission-strengthening-attempt02-20260722/results/figure8_p4_submission_strengthening.png"
+  },
+  "claim_boundary": "artifact and schema audit only; no scientific claim added by this audit"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "manuscript": "D:\\Workspace\\Pycharm\\Shengpingzhang\\SoundBarrierVibration\\research\\measurement_q2\\manuscript\\manuscript_v1.md",
+  "passed": true,
+  "hard_failure_groups": 0,
+  "hard_style_patterns": {
+    "ai_typical_delving": [],
+    "ai_typical_crucial": [],
+    "throat_clearing": [],
+    "promotional_language": []
+  },
+  "provenance_blockers": {
+    "unverified_citation_marker": [],
+    "high_warn_marker": [],
+    "anchorless_marker": [],
+    "unresolved_cross_reference": []
+  },
+  "adjacent_repeated_words": [],
+  "manual_overclaim_review": {
+    "proof_language": [],
+    "guarantee_language": [
+      {
+        "line": 5,
+        "text": "Point-cloud deformation analysis delivers a field, yet coverage is often assessed pointwise. We introduce domain-adaptive shrinkage full-field conformal calibration (DAS-FC), a scan-pair-aligned procedure for simultaneous intervals around a fixed normal-displacement estimator. Separate tuning, validation, and calibration pairs fit a structural scale, select domain-wise shrinkage, and calibrate the maximum standardized field error. Within a predeclared group, exchangeability of complete scan-pair scores gives finite-sample simultaneous coverage; unmapped groups receive a labelled fallback without that guarantee. On 240 held-out pairs from four known synthetic domains, DAS-FC achieved 0.958 simultaneous coverage and reduced mean width from 13.351 to 11.173 mm relative to homoscedastic pair-max calibration. The paired interval-score difference was -2.135 mm (domain-stratified bootstrap 95% confidence interval, -2.362 to -1.939). Pointwise intervals attained 0.946 mean point coverage but covered only 2/240 complete fields. Extensions retained negative score differences across three frozen registration front ends and 120 repeated splits, and beat three comparator bands on 240 pairs. Without retuning, three ETH Rockfall Simulator events supplied sparse independent references: trimmed point-to-point and robust point-to-plane intervals contained all four target components in 3/3 events, versus 0/3 for Cascade-Strong. A truth-free diagnostic audit placed all three events outside the synthetic calibration envelope. Thus nominal-coverage evidence remains synthetic; one apparatus and four targets per event cannot establish dense-field, population, or railway-field coverage."
+      },
+      {
+        "line": 17,
+        "text": "Conformal methods offer finite-sample calibration by reserving exchangeable calibration examples. Risk-control formulations extend the target beyond marginal prediction error [@angelopoulos2024], functional-output methods construct calibrated bands or covered-fraction guarantees [@ma2024], and dense medical registration has combined quantile estimation with conformal uncertainty at voxel, landmark, and case levels [@gheiji2026]. Exact conditional coverage is not universally available in finite samples, however; practical guarantees require predefined groups, restricted function classes, or explicit shift assumptions [@gibbs2025; @bhattacharyya2026]. For structural point clouds, the calibration unit and the delivered measurement event should therefore be aligned explicitly, and behavior outside represented domains should be reported empirically rather than relabeled as guaranteed."
+      },
+      {
+        "line": 19,
+        "text": "This study introduces domain-adaptive shrinkage full-field conformal calibration (DAS-FC). The method leaves a fixed support-aware point estimator unchanged across all interval comparisons. It learns a positive structural conditional error scale on tuning scan pairs, selects domain-wise shrinkage toward a homoscedastic scale on separate validation pairs, and calibrates the maximum standardized field error on complete calibration pairs. A conservative fallback and a frozen scan-pair rejector report degradation under domain shift rather than forcing a nominal guarantee. The contribution is the interaction of these elements around a measurement-event-aligned target, not the first use of registration, heteroscedastic regression, shrinkage, or conformal prediction individually."
+      },
+      {
+        "line": 86,
+        "text": "**Figure 1. DAS-FC workflow and applicability boundary.** A fixed point estimator produces the displacement field and diagnostics. Independent tuning, validation, and calibration roles fit the structural scale, select shrinkage, and set the scan-pair maximum quantile. Protocol metadata must map a new pair to a predeclared calibrated group; otherwise, the pooled homoscedastic fallback is reported outside the formal guarantee. The public three-device analysis supplies consistency evidence only and is not part of the displacement-coverage calibration chain."
+      },
+      {
+        "line": 147,
+        "text": "5. At inference, map acquisition metadata to a registered domain. If a mapping exists, return $\\hat u(x)\\pm q_d s_{\\mathrm{DAS}}(x;d)$ with an in-scope label. Otherwise return the pooled homoscedastic fallback with an outside-guarantee label."
+      },
+      {
+        "line": 198,
+        "text": "Three consecutive physical events were processed once with the frozen front ends. Estimator, fallback quantiles, thresholds, and P1 reports were hash-locked; no Rockfall case was used for tuning or calibration. Unmapped acquisition metadata triggered the predeclared fallback and an outside-guarantee label. Endpoints were event-level coverage of four TS60-referenced normal components, 3D target error, normal MAE, width, and score. The scan-pair event was independent; the four targets were nested validation locations, so no target-level inference was used."
+      },
+      {
+        "line": 261,
+        "text": "**Figure 3. Sensitivity and robustness boundaries.** (a) DAS-FC-minus-homoscedastic interval-score differences across four grids, with domain-stratified bootstrap 95% confidence intervals. (b) Empirical coverage and mean width with and without frozen fallback in the default unseen and `rbf_kink` stress sets; these are stress-test outcomes, not nominal guarantees. (c) Selective-risk curves on 480 disjoint v2 scan pairs; lower risk at a given retained fraction is preferred."
+      },
+      {
+        "line": 320,
+        "text": "All three Rockfall events lay beyond the synthetic diagnostic distribution. Their robust RMS distances were 12.24, 41.53, and 32.12, compared with a synthetic 99th percentile of 5.17; the nearest-synthetic distances were 9.51, 38.22, and 28.82. Six of seven diagnostics were outside the synthetic 1st--99th percentile envelope for E0--E1, and all seven were outside for E1--E2 and E2--E3. This observable, truth-free result supports the outside-guarantee label rather than a cross-domain coverage claim."
+      },
+      {
+        "line": 360,
+        "text": "Fallback raised unseen-domain empirical coverage but widened intervals enough to worsen score. The Rockfall diagnostic distances, all above the synthetic 99th percentile, independently support its outside-guarantee label. Selective ranking is also domain-dependent: residual tied scale on `rbf_kink`, whereas match distance was superior on real surface disagreement. Under shift, the defensible output is a target-domain-validated risk rank or abstention label, not a nominal guarantee."
+      }
+    ],
+    "universal_language": [
+      {
+        "line": 17,
+        "text": "Conformal methods offer finite-sample calibration by reserving exchangeable calibration examples. Risk-control formulations extend the target beyond marginal prediction error [@angelopoulos2024], functional-output methods construct calibrated bands or covered-fraction guarantees [@ma2024], and dense medical registration has combined quantile estimation with conformal uncertainty at voxel, landmark, and case levels [@gheiji2026]. Exact conditional coverage is not universally available in finite samples, however; practical guarantees require predefined groups, restricted function classes, or explicit shift assumptions [@gibbs2025; @bhattacharyya2026]. For structural point clouds, the calibration unit and the delivered measurement event should therefore be aligned explicitly, and behavior outside represented domains should be reported empirically rather than relabeled as guaranteed."
+      },
+      {
+        "line": 39,
+        "text": "Domain conditioning is also bounded by theory. Universal finite-sample conditional coverage is unattainable without restricting the conditioning target [@gibbs2025]. Group-weighted conformal prediction provides a principled route when groups and shift structure are specified [@bhattacharyya2026]. We use predefined known domains for model selection and calibration, and we label held-out-domain outcomes as empirical stress tests. Fallback and abstention are measurement policies for exposing degraded applicability, not devices for restoring a theorem after exchangeability fails."
+      },
+      {
+        "line": 257,
+        "text": "On this deformation-family stress set, scale-only AURC was 1.4946 and residual-only AURC was 1.4822; their difference interval crossed zero (-0.0090 to +0.0327). Scale remained better than the out-of-domain and combined diagnostics. Accordingly, the independent v2 conclusion is not generalized into a universal real- or arbitrary-family ordering."
+      },
+      {
+        "line": 269,
+        "text": "All frozen diagnostics were associated with post-Cascade surface disagreement. Mean local scale, scale 95th percentile, and match-distance 95th percentile had Spearman correlations of 0.858, 0.904, and 0.976, respectively. Their AURCs were 2.972, 2.937, and 2.859. Mean-scale minus match-distance AURC was +0.113 (cluster bootstrap 95% confidence interval, +0.070 to +0.161), so match distance ranked real acquisition risk better than learned scale. This negative result prevents a universal scale-only claim."
+      },
+      {
+        "line": 300,
+        "text": "All 1,216 frozen SHREC'19 method--resolution--direction rows completed without failure. Across 76 pair rows, the median high--low surface-fit gap was 0.001419 for Cascade-Strong (interquartile range, 0.000909--0.002001), 0.001729 for trimmed point-to-point ICP (0.001110--0.002199), and 0.001950 for robust point-to-plane ICP (0.001371--0.003183). Cascade-Strong had the lower pairwise fit gap in 46/76 comparisons with trimmed point-to-point ICP and 59/76 with robust point-to-plane ICP. The ordering was not universal: in test set 0, the median Cascade-minus-trimmed-ICP gap was +0.000110, opposite to the aggregate median of -0.000079."
+      },
+      {
+        "line": 312,
+        "text": "Robust point-to-plane had the smallest event-level 3D error: median event-mean error was 1.366 mm (range, 0.609--1.781 mm), compared with 2.021 mm (1.167--13.453 mm) for trimmed point-to-point and 13.692 mm (9.532--23.026 mm) for Cascade-Strong. Median normal-component MAE was 0.376, 0.490, and 5.708 mm, respectively. Median interval width was 10.734 mm for robust point-to-plane, 10.091 mm for trimmed point-to-point, and 15.882 mm for Cascade-Strong. The E0--E1 trimmed point-to-point interval widened to 29.815 mm while retaining coverage, illustrating that finite-case coverage alone does not establish efficiency or a universal frontend ranking."
+      },
+      {
+        "line": 378,
+        "text": "DAS-FC aligns conformal calibration with the complete scan-pair displacement-field event. With a fixed estimator and four synthetic groups, it improved score and width against three pair-max baselines while retaining simultaneous coverage compatible with 0.95. Independent splits, grids, front ends, baselines, and deterministic reproduction support the internal result. Rockfall added sparse physical corroboration: two front ends contained all four target components in 3/3 events under central and tolerance-range analyses, versus 0/3 for Cascade-Strong, while observable diagnostics flagged all events as out of domain. The framework therefore supplies bounded groupwise calibration and explicit applicability reporting, not dense-field validation, population coverage, railway deployment, or universal robustness."
+      }
+    ],
+    "real_world_validation": [],
+    "railway_field_accuracy": []
+  },
+  "long_sentence_threshold_words": 60,
+  "long_sentences": [],
+  "style_counts": {
+    "em_dash": 0,
+    "double_hyphen": 59,
+    "semicolon": 86
+  },
+  "interpretation": "PASS means no deterministic submission marker, adjacent repeated word, or selected high-risk style phrase was found. Long sentences and overclaim terms remain advisory and require author judgment in context."
+}

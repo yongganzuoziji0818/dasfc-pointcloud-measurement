@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "DASFC-P4-SUBMISSION-STRENGTHENING-V1",
+  "formal_config": "research/measurement_q2/configs/formal_v1.json",
+  "formal_report": "research/measurement_q2/evidence/formal/formal_report.json",
+  "rockfall_config": "research/measurement_q2/configs/rockfall_algorithm_protocol_v1.json",
+  "rockfall_dataset_root": "datasets/raw/rockfall_simulator_attempt03",
+  "rockfall_mapping_dir": "runs/rockfall-frame-mapping-v1-20260721/results",
+  "rockfall_target_results": "runs/rockfall-d5-formal-attempt02-20260721/results/target_results.csv",
+  "rockfall_physical_report": "runs/rockfall-d5-formal-attempt02-20260721/results/physical_validation_report.json",
+  "input_sha256": {
+    "research/measurement_q2/configs/formal_v1.json": "3f5e73d7725a73682c5c4fb38a2019bb6323a0cd761721bf346e34965ad070b6",
+    "research/measurement_q2/evidence/formal/formal_report.json": "5345a1169b5e7eeccd64fe6ad27c7d269784131fbbe89a7bba8746b17f58fd6a",
+    "research/measurement_q2/configs/rockfall_algorithm_protocol_v1.json": "4833b979a79982e018b10d9fbb6d4cfafaebeff509002bf63c2df6948fda5e7e",
+    "runs/rockfall-d5-formal-attempt02-20260721/results/target_results.csv": "041afcec58a0a2afc70961e389c5870bb7a2b01c5aed968fb5ba166abd455adf",
+    "runs/rockfall-d5-formal-attempt02-20260721/results/physical_validation_report.json": "844fe4d9d8785132e6ecbfa25a75a5f5f88b5099b0d114ae26fe24d7f6f00c44",
+    "runs/rockfall-frame-mapping-v1-20260721/results/frame_mapping.json": "8b53f6092c2a95e48023d0cc4dce753fa54f85e38e6a99137a86e8787964e1e5",
+    "runs/rockfall-frame-mapping-v1-20260721/results/frame_residuals.csv": "b015544a6760d1c1c21267e112d7e294d2a1fc006e36717b1b67868a33d8c197"
+  },
+  "domain_audit": {
+    "frontend": "cascade_strong",
+    "synthetic_stage": "tuning",
+    "synthetic_pairs_per_known_domain": 60,
+    "envelope_quantiles": [0.01, 0.99],
+    "mad_multiplier": 1.4826,
+    "std_fallback_multiplier": 0.1,
+    "scale_floor": 1e-12
+  },
+  "field_example": {
+    "minimum_pointwise_point_coverage": 0.9,
+    "require_pointwise_simultaneous_failure": true,
+    "require_das_simultaneous_success": true,
+    "selection_order": "case_id_lexicographic",
+    "reconstruction_absolute_tolerance": 1e-9
+  },
+  "reference_sensitivity": {
+    "modes": ["target_projected_sum", "event_rms_rss"],
+    "report_population_inference": false
+  },
+  "figure": {
+    "dpi": 600,
+    "formats": ["pdf", "svg", "png"],
+    "font_family": "DejaVu Sans",
+    "colorblind_palette": ["#0072B2", "#E69F00", "#009E73", "#D55E00"]
+  }
+}

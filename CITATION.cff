@@ -2,12 +2,12 @@ cff-version: 1.2.0
 message: "If you use this software or its compact evidence package, please cite the archived release."
 title: "DAS-FC point-cloud measurement"
 type: software
-version: 1.0.1
+version: 1.0.2
 date-released: 2026-07-22
 license: MIT
-doi: "10.5281/zenodo.21481638"
+doi: "10.5281/zenodo.21477661"
 repository-code: "https://github.com/yongganzuoziji0818/dasfc-pointcloud-measurement"
-url: "https://doi.org/10.5281/zenodo.21481638"
+url: "https://doi.org/10.5281/zenodo.21477661"
 abstract: >-
   Research code, frozen protocols, compact results, and manuscript materials for
   scan-pair-aligned conformal coverage intervals for structural point-cloud
