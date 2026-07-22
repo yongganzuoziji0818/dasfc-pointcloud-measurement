@@ -32,6 +32,8 @@ research/measurement_q2/
 
 Raw public datasets and full run directories are intentionally excluded. Dataset locations, fixed revisions, checksums, and allowed inferences are documented in `protocols/` and the manuscript.
 
+The public tree is intentionally limited to the current P0--P4 evidence path. Pre-freeze pilots, abandoned SHREC'20A and Open3D smoke routes, intermediate manuscript-QA snapshots, and internal simulated-review notes are not part of the reproducibility package. Their removal does not alter frozen protocols, result tables, final QA receipts, or archived failure evidence used by the manuscript.
+
 ## Environment
 
 Python 3.12 is the frozen environment family.
@@ -63,7 +65,7 @@ This package contains no Railway Sciences confidential data, private point cloud
 
 ## Citation and archive
 
-Citation metadata are provided in `CITATION.cff`. Release `v1.0.2` and all future versions are resolved by the Zenodo concept DOI https://doi.org/10.5281/zenodo.21477661. Version-specific records preserve earlier releases, including `v1.0.1` at https://doi.org/10.5281/zenodo.21481638 and `v1.0.0` at https://doi.org/10.5281/zenodo.21477662.
+Citation metadata are provided in `CITATION.cff`. Release `v1.0.3` and all future versions are resolved by the Zenodo concept DOI https://doi.org/10.5281/zenodo.21477661. Version-specific records preserve earlier releases, including `v1.0.2` at https://doi.org/10.5281/zenodo.21482836, `v1.0.1` at https://doi.org/10.5281/zenodo.21481638, and `v1.0.0` at https://doi.org/10.5281/zenodo.21477662.
 
 ## License
 

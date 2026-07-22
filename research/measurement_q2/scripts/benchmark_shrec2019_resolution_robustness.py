@@ -12,7 +12,7 @@ import numpy as np
 import open3d as o3d
 from scipy.spatial import cKDTree
 
-from research.measurement_q2.scripts.benchmark_shrec2020a_frontends import (
+from research.measurement_q2.scripts.registration_utils import (
     frontend_transform,
     transform,
 )
