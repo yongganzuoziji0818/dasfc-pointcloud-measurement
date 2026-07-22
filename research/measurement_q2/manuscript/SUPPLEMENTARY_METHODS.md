@@ -2,7 +2,7 @@
 
 ## S1. Scope and evidence boundary
 
-This supplement specifies the implemented DAS-FC procedure. Confirmatory nominal-coverage results use synthetic scan pairs with known dense truth. The public 3DPrintedShapes v1 analysis uses single-state mesh--scan surface disagreement. The SHREC'19 analysis uses real deformation pairs but only observable cross-resolution fit and transform-consistency endpoints because the retrieved public archive contained no reference correspondence or displacement files. The ETH Rockfall Simulator analysis adds independently referenced sparse physical dual-epoch endpoints for three consecutive events. It does not provide dense-field truth, population nominal coverage, independent-apparatus replication, or railway-field performance.
+This supplement specifies the implemented DAS-FC procedure. Confirmatory nominal-coverage results use synthetic scan pairs because known dense truth is observable there. The public 3DPrintedShapes v1 analysis uses single-state mesh--scan surface disagreement. The SHREC'19 analysis uses real deformation pairs but only observable cross-resolution fit and transform-consistency endpoints because the retrieved public archive contained no reference correspondence or displacement files. The ETH Rockfall Simulator analysis supplies a sparse independent-reference check for three consecutive physical events. It provides bounded physical corroboration, not dense-field truth, population nominal coverage, independent-apparatus replication, or railway-field performance.
 
 ## S2. Frozen point-estimation front end
 
